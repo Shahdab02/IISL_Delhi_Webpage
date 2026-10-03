@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import hero1 from "../../assets/hero1.jpeg";
@@ -12,6 +12,7 @@ const slides = [hero1, hero2, hero3, hero4, hero5];
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const touchStart = useRef(null);
 
   /* ================= AUTO SLIDER ================= */
   useEffect(() => {
@@ -46,6 +47,30 @@ const Slider = () => {
         className="relative m-0 w-full overflow-hidden p-0"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
+        onTouchStart={(event) => {
+          const touch = event.changedTouches[0];
+          touchStart.current = touch
+            ? { x: touch.clientX, y: touch.clientY }
+            : null;
+        }}
+        onTouchEnd={(event) => {
+          const start = touchStart.current;
+          const touch = event.changedTouches[0];
+          touchStart.current = null;
+
+          if (!start || !touch) return;
+
+          const deltaX = touch.clientX - start.x;
+          const deltaY = touch.clientY - start.y;
+
+          if (Math.abs(deltaX) > 40 && Math.abs(deltaX) > Math.abs(deltaY)) {
+            setCurrentSlide((prev) =>
+              deltaX < 0
+                ? (prev + 1) % slides.length
+                : (prev - 1 + slides.length) % slides.length,
+            );
+          }
+        }}
       >
         {/* =================================================
             IMAGE WRAPPER
@@ -88,10 +113,11 @@ const Slider = () => {
             aria-label="Previous slide"
             className="
               absolute
+              hidden
+              sm:flex
               left-4
               top-1/2
               z-30
-              flex
               h-11
               w-11
               -translate-y-1/2
@@ -130,10 +156,11 @@ const Slider = () => {
             aria-label="Next slide"
             className="
               absolute
+              hidden
+              sm:flex
               right-4
               top-1/2
               z-30
-              flex
               h-11
               w-11
               -translate-y-1/2
@@ -169,14 +196,14 @@ const Slider = () => {
           <div
             className="
               absolute
-              right-5
-              top-5
+              right-2
+              top-2
               z-30
               rounded-full
               bg-black/50
-              px-4
-              py-2
-              text-xs
+              px-2.5
+              py-1
+              text-[10px]
               font-bold
               text-white
               shadow-lg
@@ -184,6 +211,8 @@ const Slider = () => {
 
               sm:right-6
               sm:top-6
+              sm:px-4
+              sm:py-2
               sm:text-sm
             "
           >
@@ -197,19 +226,25 @@ const Slider = () => {
           ================================================== */}
           <div
             className="
-              absolute
-              bottom-5
-              left-1/2
+              relative
               z-30
               flex
-              -translate-x-1/2
               items-center
-              gap-2
-              rounded-full
-              bg-black/35
-              px-3
-              py-2
-              backdrop-blur-md
+              justify-center
+              gap-0.5
+              bg-slate-900
+              px-2
+              py-1
+              sm:absolute
+              sm:bottom-5
+              sm:left-1/2
+              sm:-translate-x-1/2
+              sm:gap-2
+              sm:rounded-full
+              sm:bg-black/35
+              sm:px-3
+              sm:py-2
+              sm:backdrop-blur-md
             "
           >
             {slides.map((_, index) => (
@@ -218,19 +253,29 @@ const Slider = () => {
                 type="button"
                 onClick={() => setCurrentSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}
+                aria-current={currentSlide === index ? "true" : undefined}
                 className={`
-                  h-2
+                  flex
+                  h-6
+                  w-6
+                  items-center
+                  justify-center
                   rounded-full
                   transition-all
                   duration-500
-
-                  ${
-                    currentSlide === index
-                      ? "w-8 bg-white"
-                      : "w-2 bg-white/50 hover:bg-white"
-                  }
+                  sm:h-auto
+                  sm:w-auto
+                  sm:p-0
                 `}
-              />
+              >
+                <span
+                  className={`block h-1.5 rounded-full transition-all duration-500 sm:h-2 ${
+                    currentSlide === index
+                      ? "w-5 bg-white sm:w-8"
+                      : "w-1.5 bg-white/50 hover:bg-white sm:w-2"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>
