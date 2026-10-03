@@ -16,6 +16,7 @@ import {
 import sir from "../../assets/summit_sir.jpeg";
 import shahdab from "../../assets/shahdab.jpeg";
 import simmi from "../../assets/simmi.jpeg";
+import divya from "../../assets/divya.jpeg";
 
 const Team = () => {
   const teamMembers = [
@@ -63,7 +64,7 @@ const Team = () => {
       name: "Divya Sharma",
       role: "Head – Student Mentorship & Languages",
       icon: Languages,
-      image: null,
+      image: divya,
       color: "from-emerald-600 to-teal-600",
       message:
         "Helping students improve communication, language skills, confidence, and overall professional development.",
