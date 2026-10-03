@@ -30,10 +30,10 @@ const Placement = () => {
 						alt="Students preparing for career opportunities"
 						className="aspect-[4/3] w-full rounded-2xl object-cover shadow-xl"
 					/>
-					<div className="absolute bottom-4 left-4 rounded-lg bg-white px-4 py-3 shadow-lg sm:bottom-6 sm:left-6">
+					{/* <div className="absolute bottom-4 left-4 rounded-lg bg-white px-4 py-3 shadow-lg sm:bottom-6 sm:left-6">
 						<p className="text-sm font-bold text-slate-900">Skills for the next step</p>
 						<p className="mt-1 text-xs text-slate-600">Learn, prepare, and move forward</p>
-					</div>
+					</div> */}
 				</div>
 
 				<div>
