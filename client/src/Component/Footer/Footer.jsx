@@ -1,68 +1,116 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { Clock3, Mail, MapPin, Phone } from "lucide-react";
 import logo from "../../assets/logo.jpeg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#1f1230] text-white mt-16">
-      <div className="max-w-375 mx-auto px-4 md:px-2 lg:px-3 py-14">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="mt-16 bg-[#1f1230] text-white">
+      <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
+        <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <div className="flex items-center gap-3 mb-5">
-              <img src={logo} alt="IISL" className="h-12 w-auto object-contain" />
+            <div className="flex items-center gap-4">
+              <img
+                src={logo}
+                alt="IISL"
+                className="h-14 w-auto rounded-lg object-contain"
+              />
               <div>
-                <h3 className="text-2xl font-black tracking-tight text-white">IISL</h3>
-                <p className="text-[10px] uppercase tracking-[0.22em] text-[#d9b3ff]">Indian Institute of Skills &amp; Languages</p>
+                <h3 className="text-2xl font-black tracking-tight text-white">
+                  IISL
+                </h3>
+                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#d9b3ff]">
+                  Indian Institute of Skills &amp; Languages
+                </p>
               </div>
             </div>
-            <p className="text-sm text-white/75 leading-7">
+
+            <p className="mt-6 max-w-xl text-sm leading-7 text-white/70">
               Empowering students with industry-focused learning, practical mentorship, and career-driven education for a brighter future.
             </p>
+
+            <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
+              <div>
+                <h4 className="mb-4 text-sm font-bold uppercase tracking-[0.16em] text-white">
+                  Quick Links
+                </h4>
+                <ul className="space-y-3 text-sm text-white/65">
+                  <li><Link to="/" className="transition-colors hover:text-[#d9b3ff]">Home</Link></li>
+                  <li><Link to="/about" className="transition-colors hover:text-[#d9b3ff]">About</Link></li>
+                  <li><Link to="/why-us" className="transition-colors hover:text-[#d9b3ff]">Why Us</Link></li>
+                  <li><Link to="/courses" className="transition-colors hover:text-[#d9b3ff]">Courses</Link></li>
+                  <li><Link to="/contact" className="transition-colors hover:text-[#d9b3ff]">Contact</Link></li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 className="mb-4 text-sm font-bold uppercase tracking-[0.16em] text-white">
+                  Programs
+                </h4>
+                <ul className="space-y-3 text-sm text-white/65">
+                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Professional Courses</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Career Guidance</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Live Projects</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Placement Support</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Admission Help</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-5 text-white">Quick Links</h4>
-            <ul className="space-y-3 text-sm text-white/75">
-              <li><Link to="/" className="hover:text-white transition">Home</Link></li>
-              <li><Link to="/about" className="hover:text-white transition">About</Link></li>
-              <li><Link to="/why-us" className="hover:text-white transition">Why Us</Link></li>
-              <li><Link to="/courses" className="hover:text-white transition">Courses</Link></li>
-              <li><Link to="/contact" className="hover:text-white transition">Contact</Link></li>
-            </ul>
-          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-8">
+            <h4 className="text-lg font-bold text-white">Contact Us</h4>
+            <div className="mt-6 grid gap-5 sm:grid-cols-2">
+              <div className="flex items-start gap-3">
+                <MapPin size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <p className="text-sm leading-6 text-white/70">
+                  Rohini Sector 23, Delhi
+                  <br />
+                  Near Govt. School
+                </p>
+              </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-5 text-white">Programs</h4>
-            <ul className="space-y-3 text-sm text-white/75">
-              <li><a href="#" className="hover:text-white transition">Professional Courses</a></li>
-              <li><a href="#" className="hover:text-white transition">Career Guidance</a></li>
-              <li><a href="#" className="hover:text-white transition">Live Projects</a></li>
-              <li><a href="#" className="hover:text-white transition">Placement Support</a></li>
-              <li><a href="#" className="hover:text-white transition">Admission Help</a></li>
-            </ul>
-          </div>
+              <div className="flex items-start gap-3">
+                <Phone size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <div className="space-y-1 text-sm text-white/70">
+                  <a href="tel:+919310772538" className="block transition-colors hover:text-white">
+                    +91-9310772538
+                  </a>
+                  <a href="tel:+918810282586" className="block transition-colors hover:text-white">
+                    +91-8810282586
+                  </a>
+                </div>
+              </div>
 
-          <div>
-            <h4 className="text-lg font-bold mb-5 text-white">Contact Us</h4>
-            <ul className="space-y-3 text-sm text-white/75">
-              <li>🏢 Rohini Sector 23, Delhi</li>
-              <li>📞 +91-9310772538</li>
-              <li>📞 +91-8810282586</li>
-              <li>📍 Near Govt. School</li>
-              <li>✉️ iisldelhi@gmail.com</li>
-              <li>⏰ Mon - Sat: 9:00 AM - 8:00 PM</li>
-            </ul>
+              <div className="flex items-start gap-3">
+                <Mail size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <a
+                  href="mailto:iisldelhi@gmail.com"
+                  className="break-all text-sm text-white/70 transition-colors hover:text-white"
+                >
+                  iisldelhi@gmail.com
+                </a>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Clock3 size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <p className="text-sm leading-6 text-white/70">
+                  Mon - Sat
+                  <br />
+                  9:00 AM - 8:00 PM
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/10 pt-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-white/65">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm text-white/55 md:flex-row">
           <p>© {currentYear} IISL. All rights reserved.</p>
           <div className="flex items-center gap-5">
-            <a href="#" className="hover:text-white transition">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition">Terms</a>
-            <a href="#" className="hover:text-white transition">Support</a>
+            <a href="#" className="transition-colors hover:text-white">Privacy Policy</a>
+            <a href="#" className="transition-colors hover:text-white">Terms</a>
+            <a href="#" className="transition-colors hover:text-white">Support</a>
           </div>
         </div>
       </div>
