@@ -25,7 +25,7 @@ const Team = () => {
       role: "Founder & Director",
       icon: Target,
       image: sir,
-      color: "from-blue-600 to-indigo-600",
+      color: "from-blue-600 to-indigo-800",
       message:
         "Building a learning ecosystem where students gain practical skills, confidence, and career direction.",
       skills: ["Leadership", "Career Strategy", "Training"],
@@ -35,7 +35,7 @@ const Team = () => {
       role: "Head of Marketing",
       icon: Megaphone,
       image: null,
-      color: "from-purple-600 to-pink-600",
+      color: "from-purple-500 to-pink-700",
       message:
         "Connecting students with opportunities through strategic marketing, communication, and outreach.",
       skills: ["Marketing", "Branding", "Communication"],
@@ -45,7 +45,7 @@ const Team = () => {
       role: "Head – Software Development & Technology",
       icon: Code2,
       image: shahdab,
-      color: "from-cyan-600 to-blue-600",
+      color: "from-cyan-500 to-blue-700",
       message:
         "Focused on technology, web development, and building practical digital solutions for students and businesses.",
       skills: ["React.js", "Node.js", "Full Stack"],
@@ -55,7 +55,7 @@ const Team = () => {
       role: "Associate Head – Programs & Digital Marketing",
       icon: Sparkles,
       image: simmi,
-      color: "from-orange-500 to-red-500",
+      color: "from-purple-500 to-purple-700",
       message:
         "Managing student programs and creating engaging digital initiatives that support learning and growth.",
       skills: ["Programs", "Digital Marketing", "Management"],
@@ -65,7 +65,7 @@ const Team = () => {
       role: "Head – Student Mentorship & Languages",
       icon: Languages,
       image: divya,
-      color: "from-emerald-600 to-teal-600",
+      color: "from-emerald-500 to-teal-700",
       message:
         "Helping students improve communication, language skills, confidence, and overall professional development.",
       skills: ["Mentorship", "Languages", "Personality Development"],
@@ -124,9 +124,7 @@ const Team = () => {
 
   return (
     <div className="min-h-screen bg-white text-slate-900">
-      {/* =========================================================
-          HERO SECTION
-      ========================================================= */}
+      {/* hero sectio */}
       <section className="relative overflow-hidden bg-slate-950">
         <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
 
@@ -176,9 +174,7 @@ const Team = () => {
         </div>
       </section>
 
-      {/* =========================================================
-          HIGHLIGHTS SECTION
-      ========================================================= */}
+      {/*HIGHLIGHTS SECTION*/}
       <section className="bg-slate-50 py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <div className="mx-auto mb-12 max-w-3xl text-center">
@@ -223,9 +219,7 @@ const Team = () => {
         </div>
       </section>
 
-      {/* =========================================================
-          TEAM SECTION
-      ========================================================= */}
+      {/*TEAM SECTION*/}
       <section id="team" className="scroll-mt-20 bg-white py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-10">
           <div className="mx-auto mb-14 max-w-3xl text-center">
@@ -244,9 +238,7 @@ const Team = () => {
             </p>
           </div>
 
-          {/* =====================================================
-              TEAM CARDS
-          ===================================================== */}
+          {/* TEAM CARDS*/}
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {teamMembers.map((member, index) => {
               const Icon = member.icon;
@@ -256,21 +248,10 @@ const Team = () => {
                   key={index}
                   className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
                 >
-                  {/* =================================================
-                      IMAGE AREA
-                  ================================================= */}
+                  {/* image area */}
                   <div className="relative h-97.5 overflow-hidden bg-slate-900 sm:h-105">
                     {member.image ? (
                       <>
-                        {/* -----------------------------------------
-                            ACTUAL IMAGE
-                            
-                            object-fill:
-                            - Full width
-                            - Full height
-                            - No crop
-                            - Vertical height unchanged
-                        ------------------------------------------ */}
                         <img
                           src={member.image}
                           alt={member.name}
@@ -281,9 +262,6 @@ const Team = () => {
                         <div className="absolute inset-0 z-30 bg-black/5" />
                       </>
                     ) : (
-                      /* -----------------------------------------
-                         NO IMAGE FALLBACK
-                      ------------------------------------------ */
                       <div
                         className={`absolute inset-0 flex items-center justify-center bg-linear-to-br ${member.color}`}
                       >
@@ -313,9 +291,7 @@ const Team = () => {
                     </div>
                   </div>
 
-                  {/* =================================================
-                      CONTENT
-                  ================================================= */}
+                  {/* content */}
                   <div className="p-6 sm:p-7">
                     <div className="mb-4">
                       <h3 className="text-xl font-extrabold text-slate-900">
@@ -356,9 +332,7 @@ const Team = () => {
         </div>
       </section>
 
-      {/* =========================================================
-          CAREER SUPPORT
-      ========================================================= */}
+      {/* career suports */}
       <section
         id="support"
         className="scroll-mt-20 bg-slate-950 py-20 sm:py-24"
@@ -424,9 +398,7 @@ const Team = () => {
         </div>
       </section>
 
-      {/* =========================================================
-          FINAL CTA
-      ========================================================= */}
+    
       <section className="bg-linear-to-b from-slate-950 to-blue-950 py-20">
         <div className="mx-auto max-w-4xl px-6 text-center sm:px-8">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/10 text-blue-300">

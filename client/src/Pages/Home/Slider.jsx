@@ -13,24 +13,19 @@ const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const touchStart = useRef(null);
 
-  /* ================= PREVIOUS ================= */
+  /*PREVIOUS  */
   const previousSlide = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  /* ================= NEXT ================= */
+  /*NEXT  */
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
   };
 
   return (
     <main className="m-0 w-full bg-white p-0">
-      {/* =====================================================
-          SLIDER
-          NO PADDING
-          NO MARGIN
-          NO GAP
-      ====================================================== */}
+      {/*SLIDER */}
       <section
         className="relative m-0 w-full overflow-hidden p-0"
         onTouchStart={(event) => {
@@ -58,13 +53,7 @@ const Slider = () => {
           }
         }}
       >
-        {/* =================================================
-            IMAGE WRAPPER
-
-            IMPORTANT:
-            No fixed height.
-            Image controls its own height.
-        ================================================== */}
+        {/* IMAGE WRAPPER */}
         <div className="relative m-0 w-full p-0">
           {slides.map((slide, index) => (
             <img
@@ -90,9 +79,7 @@ const Slider = () => {
             />
           ))}
 
-          {/* =================================================
-              PREVIOUS BUTTON
-          ================================================== */}
+          {/* PREVIOUS BUTTON*/}
           <button
             type="button"
             onClick={previousSlide}
@@ -133,9 +120,7 @@ const Slider = () => {
             <ArrowLeft size={21} strokeWidth={2.5} className="md:h-6 md:w-6" />
           </button>
 
-          {/* =================================================
-              NEXT BUTTON
-          ================================================== */}
+          {/* NEXT BUTTON*/}
           <button
             type="button"
             onClick={nextSlide}
@@ -176,9 +161,7 @@ const Slider = () => {
             <ArrowRight size={21} strokeWidth={2.5} className="md:h-6 md:w-6" />
           </button>
 
-          {/* =================================================
-              COUNTER
-          ================================================== */}
+          {/*COUNTER*/}
           <div
             className="
               absolute
@@ -207,9 +190,7 @@ const Slider = () => {
             {String(slides.length).padStart(2, "0")}
           </div>
 
-          {/* =================================================
-              DOTS
-          ================================================== */}
+          {/* dots */}
           <div
             className="
               relative

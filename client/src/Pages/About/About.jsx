@@ -92,9 +92,7 @@ const About = () => {
 
   return (
     <main className="overflow-hidden bg-white text-slate-900">
-      {/* =====================================================
-          HERO SECTION
-      ===================================================== */}
+     
       <section className="relative flex min-h-[650px] items-center overflow-hidden bg-slate-950">
         {/* Background Effects */}
         <div className="absolute inset-0">
@@ -162,9 +160,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          STATS
-      ===================================================== */}
+     {/* status */}
       <section className="relative z-10 -mt-12 px-5">
         <div className="mx-auto grid max-w-6xl grid-cols-2 overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-2xl lg:grid-cols-4">
           {/* Stat 1 */}
@@ -221,9 +217,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          WHO WE ARE
-      ===================================================== */}
+      {/* who we are*/}
       <section className="mx-auto max-w-7xl px-5 py-28 sm:px-8 lg:px-12">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* LEFT */}
@@ -343,9 +337,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           OUR COURSES
-      ===================================================== */}
+      */}
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-3xl text-center">
@@ -408,9 +402,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           OUR APPROACH
-      ===================================================== */}
+       */}
       <section className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="max-w-3xl">
@@ -485,9 +479,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           CORE VALUES
-      ===================================================== */}
+       */}
       <section className="bg-slate-950 py-24">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-3xl text-center">
@@ -532,9 +526,9 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
+      {/* 
           VISION & MISSION
-      ===================================================== */}
+     */}
       <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-12">
         <div className="grid gap-7 lg:grid-cols-2">
           {/* Vision */}
@@ -571,9 +565,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          OUR PROMISE
-      ===================================================== */}
+      {/* OUR PROMISE */}
       <section className="bg-slate-50 py-24">
         <div className="mx-auto max-w-6xl px-5 sm:px-8">
           <div className="text-center">
@@ -609,9 +601,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* =====================================================
-          FINAL CTA
-      ===================================================== */}
+     {/* final */}
       <section className="px-5 py-20">
         <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 p-8 text-center sm:p-12 lg:p-16">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />

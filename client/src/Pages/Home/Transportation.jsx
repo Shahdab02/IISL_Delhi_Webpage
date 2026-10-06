@@ -153,7 +153,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= QUICK INFO ================= */}
+      {/*  QUICK INFO  */}
       <section className="relative -mt-8 px-5 sm:px-8">
         <div className="mx-auto grid max-w-6xl overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-200/70 sm:grid-cols-3">
           <div className="flex items-center gap-4 border-b border-slate-100 p-5 sm:border-b-0 sm:border-r">
@@ -197,7 +197,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= BENEFITS ================= */}
+      {/* BENEFITS  */}
       <section className="px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
@@ -242,7 +242,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= HOW IT WORKS ================= */}
+      {/*  HOW IT WORKS  */}
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
@@ -283,7 +283,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= ROUTE INFORMATION ================= */}
+      {/* ROUTE INFORMATION  */}
       <section className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           <div>
@@ -350,7 +350,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= FAQ ================= */}
+      {/*  FAQ  */}
       <section className="px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
@@ -403,7 +403,7 @@ const Transportation = () => {
         </div>
       </section>
 
-      {/* ================= CTA ================= */}
+      {/* CTA */}
       <section className="px-5 pb-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-linear-to-r from-indigo-600 to-purple-700 p-8 text-center text-white shadow-2xl shadow-indigo-500/20 sm:p-12 lg:p-16">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15">

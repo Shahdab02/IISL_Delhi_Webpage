@@ -57,7 +57,7 @@ const Media = () => {
   return (
     <div className="bg-slate-50 text-slate-900">
       <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(59,130,246,0.25),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(168,85,247,0.20),transparent_30%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(90,45,143,0.25),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(217,179,255,0.20),transparent_30%)]" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
           <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">

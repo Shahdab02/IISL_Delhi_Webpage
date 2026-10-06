@@ -117,8 +117,8 @@ const Courses = () => {
       {/* =====================================================
           HERO
       ====================================================== */}
-      <section className="relative overflow-hidden bg-[#172554]">
-        <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[#4b2e83]/40 blur-3xl" />
+      <section className="relative overflow-hidden bg-[#1f1230]">
+        <div className="absolute -left-32 -top-32 h-96 w-96 rounded-full bg-[#5a2d8f]/40 blur-3xl" />
 
         <div className="absolute -right-32 top-10 h-96 w-96 rounded-full bg-orange-400/20 blur-3xl" />
 
@@ -193,8 +193,8 @@ const Courses = () => {
           PLACEMENT SUPPORT
       ====================================================== */}
       <section className="mx-auto max-w-7xl px-5 pt-14 sm:px-6 lg:px-8">
-        <div className="relative overflow-hidden rounded-[30px] border border-[#4b2e83]/10 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
-          <div className="absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#4b2e83]/5 blur-3xl" />
+        <div className="relative overflow-hidden rounded-[30px] border border-[#5a2d8f]/10 bg-white p-6 shadow-sm sm:p-8 lg:p-10">
+          <div className="absolute -right-20 -top-20 h-52 w-52 rounded-full bg-[#5a2d8f]/5 blur-3xl" />
 
           <div className="relative grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
@@ -203,7 +203,7 @@ const Courses = () => {
                 Career & Placement Support
               </div>
 
-              <h2 className="mt-4 text-2xl font-black text-[#172554] sm:text-3xl">
+              <h2 className="mt-4 text-2xl font-black text-[#1f1230] sm:text-3xl">
                 100% Placement Support
               </h2>
 
@@ -234,7 +234,7 @@ const Courses = () => {
               </div>
             </div>
 
-            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-3xl bg-[#4b2e83]/10 text-[#4b2e83] lg:h-28 lg:w-28">
+            <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-3xl bg-[#5a2d8f]/10 text-[#5a2d8f] lg:h-28 lg:w-28">
               <BriefcaseBusiness size={45} />
             </div>
           </div>
@@ -246,11 +246,11 @@ const Courses = () => {
       ====================================================== */}
       <section className="mx-auto max-w-7xl px-5 pt-16 sm:px-6 lg:px-8">
         <div className="max-w-2xl">
-          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#4b2e83]">
+          <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
             Our Courses
           </span>
 
-          <h2 className="mt-3 text-3xl font-black tracking-tight text-[#172554] sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-black tracking-tight text-[#1f1230] sm:text-4xl">
             Find the right course for your goals
           </h2>
 
@@ -279,7 +279,7 @@ const Courses = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search courses, skills..."
-                className="h-12 w-full rounded-xl border border-slate-200 bg-slate-50 pl-12 pr-11 text-sm font-medium text-slate-700 outline-none transition focus:border-[#4b2e83] focus:bg-white focus:ring-4 focus:ring-[#4b2e83]/10"
+                className="h-12 w-full rounded-xl border border-slate-200 bg-slate-50 pl-12 pr-11 text-sm font-medium text-slate-700 outline-none transition focus:border-[#5a2d8f] focus:bg-white focus:ring-4 focus:ring-[#5a2d8f]/10"
               />
 
               {searchTerm && (
@@ -300,7 +300,7 @@ const Courses = () => {
                   onClick={() => setSelectedLevel(level)}
                   className={`rounded-xl px-4 py-3 text-sm font-bold transition-all ${
                     selectedLevel === level
-                      ? "bg-[#4b2e83] text-white shadow-md shadow-[#4b2e83]/20"
+                      ? "bg-[#5a2d8f] text-white shadow-md shadow-[#5a2d8f]/20"
                       : "bg-slate-100 text-slate-600 hover:bg-slate-200"
                   }`}
                 >
@@ -314,7 +314,7 @@ const Courses = () => {
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-slate-100 pt-4">
             <p className="text-sm font-semibold text-slate-500">
               Showing{" "}
-              <span className="font-black text-[#4b2e83]">
+              <span className="font-black text-[#5a2d8f]">
                 {filteredCourses.length}
               </span>{" "}
               {filteredCourses.length === 1 ? "course" : "courses"}
@@ -323,7 +323,7 @@ const Courses = () => {
             {(searchTerm || selectedLevel !== "All") && (
               <button
                 onClick={clearFilters}
-                className="text-sm font-bold text-[#4b2e83] hover:underline"
+                className="text-sm font-bold text-[#5a2d8f] hover:underline"
               >
                 Clear filters
               </button>
@@ -341,15 +341,15 @@ const Courses = () => {
             {filteredCourses.map((course, index) => (
               <article
                 key={course.title}
-                className="group relative flex flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#4b2e83]/20 hover:shadow-2xl"
+                className="group relative flex flex-col overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:border-[#5a2d8f]/20 hover:shadow-2xl"
               >
                 {/* Accent */}
-                <div className="h-1.5 w-full bg-linear-to-r from-[#4b2e83] via-indigo-500 to-orange-400" />
+                <div className="h-1.5 w-full bg-linear-to-r from-[#5a2d8f] via-indigo-500 to-orange-400" />
 
                 <div className="flex flex-1 flex-col p-6 sm:p-7">
                   {/* Header */}
                   <div className="flex items-start justify-between gap-4">
-                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#4b2e83]/10 text-[#4b2e83] transition-all duration-300 group-hover:bg-[#4b2e83] group-hover:text-white">
+                    <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-[#5a2d8f]/10 text-[#5a2d8f] transition-all duration-300 group-hover:bg-[#5a2d8f] group-hover:text-white">
                       <Laptop size={27} />
                     </div>
 
@@ -368,7 +368,7 @@ const Courses = () => {
 
                   {/* Number */}
                   <div className="mt-6 flex items-center gap-2">
-                    <span className="text-xs font-bold tracking-widest text-[#4b2e83]">
+                    <span className="text-xs font-bold tracking-widest text-[#5a2d8f]">
                       COURSE
                     </span>
 
@@ -380,7 +380,7 @@ const Courses = () => {
                   </div>
 
                   {/* Title */}
-                  <h3 className="mt-3 text-2xl font-black leading-tight text-[#172554] transition-colors duration-300 group-hover:text-[#4b2e83]">
+                  <h3 className="mt-3 text-2xl font-black leading-tight text-[#1f1230] transition-colors duration-300 group-hover:text-[#5a2d8f]">
                     {course.title}
                   </h3>
 
@@ -391,7 +391,7 @@ const Courses = () => {
 
                   {/* Duration */}
                   <div className="mt-6 flex items-center gap-3 rounded-2xl bg-slate-50 p-4">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#4b2e83] shadow-sm">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-white text-[#5a2d8f] shadow-sm">
                       <Clock3 size={19} />
                     </div>
 
@@ -441,7 +441,7 @@ const Courses = () => {
                   <div className="mt-auto pt-7">
                     <button
                       onClick={() => handleEnquiry(course.title)}
-                      className="group/btn flex w-full items-center justify-center gap-2 rounded-xl bg-[#4b2e83] px-5 py-3.5 text-sm font-bold text-white shadow-md shadow-[#4b2e83]/20 transition-all duration-300 hover:bg-[#3d256b] hover:shadow-lg"
+                      className="group/btn flex w-full items-center justify-center gap-2 rounded-xl bg-[#5a2d8f] px-5 py-3.5 text-sm font-bold text-white shadow-md shadow-[#5a2d8f]/20 transition-all duration-300 hover:bg-[#4b2378] hover:shadow-lg"
                     >
                       <MessageCircle size={18} />
                       Enquire Now
@@ -462,7 +462,7 @@ const Courses = () => {
               <Search size={28} />
             </div>
 
-            <h3 className="mt-5 text-2xl font-black text-[#172554]">
+            <h3 className="mt-5 text-2xl font-black text-[#1f1230]">
               No courses found
             </h3>
 
@@ -472,7 +472,7 @@ const Courses = () => {
 
             <button
               onClick={clearFilters}
-              className="mt-6 rounded-xl bg-[#4b2e83] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#3d256b]"
+              className="mt-6 rounded-xl bg-[#5a2d8f] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#4b2378]"
             >
               View All Courses
             </button>
@@ -486,11 +486,11 @@ const Courses = () => {
       <section className="border-y border-slate-200 bg-white">
         <div className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#4b2e83]">
+            <span className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
               Learning Support
             </span>
 
-            <h2 className="mt-3 text-3xl font-black text-[#172554] sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-black text-[#1f1230] sm:text-4xl">
               More than just a course
             </h2>
 
@@ -530,11 +530,11 @@ const Courses = () => {
                   key={item.title}
                   className="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-lg"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#4b2e83]/10 text-[#4b2e83]">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f]">
                     <Icon size={23} />
                   </div>
 
-                  <h3 className="mt-5 text-lg font-black text-[#172554]">
+                  <h3 className="mt-5 text-lg font-black text-[#1f1230]">
                     {item.title}
                   </h3>
 
@@ -552,8 +552,8 @@ const Courses = () => {
           FINAL CTA
       ====================================================== */}
       <section className="mx-auto max-w-7xl px-5 py-16 sm:px-6 lg:px-8 lg:py-24">
-        <div className="relative overflow-hidden rounded-[32px] bg-[#172554] px-6 py-14 text-center shadow-2xl sm:px-10 lg:px-16">
-          <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-[#4b2e83]/40 blur-3xl" />
+        <div className="relative overflow-hidden rounded-[32px] bg-[#1f1230] px-6 py-14 text-center shadow-2xl sm:px-10 lg:px-16">
+          <div className="absolute -left-20 -top-20 h-60 w-60 rounded-full bg-[#5a2d8f]/40 blur-3xl" />
 
           <div className="absolute -bottom-20 -right-20 h-60 w-60 rounded-full bg-orange-400/20 blur-3xl" />
 
@@ -583,7 +583,7 @@ const Courses = () => {
                   "_blank",
                 );
               }}
-              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-extrabold text-[#4b2e83] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="mt-8 inline-flex items-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-extrabold text-[#5a2d8f] shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <MessageCircle size={19} />
               Talk to Us on WhatsApp

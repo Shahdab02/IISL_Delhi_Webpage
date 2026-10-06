@@ -19,6 +19,56 @@ function AppContent() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [location.pathname]);
 
+  useEffect(() => {
+    const contentSections = document.querySelectorAll(
+      "main.flex-1 section, main.flex-1 article",
+    );
+    const revealTargets = Array.from(contentSections).filter(
+      (element) => !element.matches("section") || !element.querySelector("article"),
+    );
+
+    if (
+      window.matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      !("IntersectionObserver" in window)
+    ) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -32px 0px" },
+    );
+
+    revealTargets.forEach((element) => {
+      const siblings = Array.from(element.parentElement?.children ?? []);
+      const siblingIndex = siblings
+        .filter((sibling) => sibling.matches("article"))
+        .indexOf(element);
+
+      if (siblingIndex >= 0) {
+        element.style.transitionDelay = `${Math.min(siblingIndex, 5) * 80}ms`;
+      }
+
+      element.classList.add("content-reveal");
+      observer.observe(element);
+    });
+
+    return () => {
+      observer.disconnect();
+      revealTargets.forEach((element) => {
+        element.classList.remove("content-reveal", "is-visible");
+        element.style.removeProperty("transition-delay");
+      });
+    };
+  }, [location.pathname]);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Topbar />
