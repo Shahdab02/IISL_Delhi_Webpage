@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import hero1 from "../../assets/hero1.jpeg";
@@ -11,19 +11,7 @@ const slides = [hero1, hero2, hero3, hero4, hero5];
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const touchStart = useRef(null);
-
-  /* ================= AUTO SLIDER ================= */
-  useEffect(() => {
-    if (isPaused) return;
-
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, [isPaused]);
 
   /* ================= PREVIOUS ================= */
   const previousSlide = () => {
@@ -45,8 +33,6 @@ const Slider = () => {
       ====================================================== */}
       <section
         className="relative m-0 w-full overflow-hidden p-0"
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
         onTouchStart={(event) => {
           const touch = event.changedTouches[0];
           touchStart.current = touch
