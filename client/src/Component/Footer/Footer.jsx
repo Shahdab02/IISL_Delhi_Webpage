@@ -1,5 +1,11 @@
 import { Link } from "react-router-dom";
-import { Clock3, Mail, MapPin, Phone } from "lucide-react";
+import {
+  Clock3,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+} from "lucide-react";
 import logo from "../../assets/logo.jpeg";
 
 const Footer = () => {
@@ -100,6 +106,73 @@ const Footer = () => {
                   <br />
                   9:00 AM - 8:00 PM
                 </p>
+              </div>
+            </div>
+
+            <div className="mt-8 border-t border-white/10 pt-6">
+              <h5 className="text-sm font-bold uppercase tracking-[0.16em] text-white">
+                Follow Us
+              </h5>
+              <div className="mt-4 flex flex-wrap gap-3">
+                <a
+                  href="https://wa.me/919310772538"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="WhatsApp"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                >
+                  <MessageCircle
+                    size={17}
+                    aria-hidden="true"
+                    className="text-[#25D366]"
+                  />
+                  WhatsApp
+                </a>
+                <a
+                  href="https://www.instagram.com/iisl_delhi/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Instagram"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                >
+                  <svg
+                    aria-hidden="true"
+                    viewBox="0 0 24 24"
+                    className="size-[17px] fill-none"
+                    stroke="url(#instagram-gradient)"
+                    strokeWidth="1.8"
+                  >
+                    <defs>
+                      <linearGradient id="instagram-gradient" x1="0" y1="24" x2="24" y2="0">
+                        <stop offset="0%" stopColor="#FFDC80" />
+                        <stop offset="50%" stopColor="#F56040" />
+                        <stop offset="100%" stopColor="#C13584" />
+                      </linearGradient>
+                    </defs>
+                    <rect x="3" y="3" width="18" height="18" rx="5" />
+                    <circle cx="12" cy="12" r="4" />
+                    <circle
+                      cx="17.5"
+                      cy="6.5"
+                      r="0.75"
+                      fill="url(#instagram-gradient)"
+                      stroke="none"
+                    />
+                  </svg>
+                  Instagram
+                </a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61594584294014"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Facebook"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                >
+                  <span aria-hidden="true" className="text-base font-black leading-none text-[#1877F2]">
+                    f
+                  </span>
+                  Facebook
+                </a>
               </div>
             </div>
           </div>
