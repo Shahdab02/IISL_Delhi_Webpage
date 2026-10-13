@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowUpRight, BriefcaseBusiness, FileText, MessageCircle } from "lucide-react";
 import placementImage from "../../assets/placemeent.jpeg";
 

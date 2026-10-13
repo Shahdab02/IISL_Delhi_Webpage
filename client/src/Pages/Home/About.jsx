@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowUpRight, BookOpen, MapPin } from "lucide-react";
 import instituteLogo from "../../assets/logo.jpeg";
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ArrowRight, Camera, Film, Play, Sparkles, Video } from "lucide-react";
 
 import media1 from "../../assets/media/media1.jpeg";

@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import {
   Phone,
@@ -92,9 +91,7 @@ const Contact = () => {
               <Phone size={23} />
             </div>
 
-            <h3 className="mt-5 text-lg font-bold text-slate-800">
-              Call Us
-            </h3>
+            <h3 className="mt-5 text-lg font-bold text-slate-800">Call Us</h3>
 
             <p className="mt-2 text-sm text-slate-500">
               9310772538
@@ -112,9 +109,7 @@ const Contact = () => {
               <Mail size={23} />
             </div>
 
-            <h3 className="mt-5 text-lg font-bold text-slate-800">
-              Email Us
-            </h3>
+            <h3 className="mt-5 text-lg font-bold text-slate-800">Email Us</h3>
 
             <p className="mt-2 break-all text-sm text-slate-500">
               iisldelhi@gmail.com
@@ -132,9 +127,7 @@ const Contact = () => {
               <MapPin size={23} />
             </div>
 
-            <h3 className="mt-5 text-lg font-bold text-slate-800">
-              Visit Us
-            </h3>
+            <h3 className="mt-5 text-lg font-bold text-slate-800">Visit Us</h3>
 
             <p className="mt-2 text-sm leading-6 text-slate-500">
               647 Gram Sabha,
@@ -149,7 +142,7 @@ const Contact = () => {
 
           {/* WEBSITE */}
           <a
-            href="https://eduvisionworld.org"
+            href="https://iisldelhi.com/"
             target="_blank"
             rel="noreferrer"
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
@@ -158,12 +151,10 @@ const Contact = () => {
               <Globe size={23} />
             </div>
 
-            <h3 className="mt-5 text-lg font-bold text-slate-800">
-              Website
-            </h3>
+            <h3 className="mt-5 text-lg font-bold text-slate-800">Website</h3>
 
             <p className="mt-2 text-sm text-slate-500">
-              eduvisionworld.org
+              iisldelhi.com
             </p>
           </a>
         </div>
@@ -198,17 +189,13 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-slate-800">
-                    Working Hours
-                  </h4>
+                  <h4 className="font-bold text-slate-800">Working Hours</h4>
 
                   <p className="mt-1 text-sm text-slate-500">
                     Monday – Saturday
                   </p>
 
-                  <p className="text-sm text-slate-500">
-                    9:00 AM – 7:00 PM
-                  </p>
+                  <p className="text-sm text-slate-500">9:00 AM – 7:00 PM</p>
                 </div>
               </div>
 
@@ -219,9 +206,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <h4 className="font-bold text-slate-800">
-                    Quick Support
-                  </h4>
+                  <h4 className="font-bold text-slate-800">Quick Support</h4>
 
                   <p className="mt-1 text-sm text-slate-500">
                     Connect with our team on WhatsApp.
@@ -351,24 +336,14 @@ const Contact = () => {
                     <option value="Basic Computer & MS Office">
                       Basic Computer & MS Office
                     </option>
-                    <option value="Web Development">
-                      Web Development
-                    </option>
+                    <option value="Web Development">Web Development</option>
                     <option value="Full Stack Development">
                       Full Stack Development
                     </option>
-                    <option value="Digital Marketing">
-                      Digital Marketing
-                    </option>
-                    <option value="English Spoken">
-                      English Spoken
-                    </option>
-                    <option value="German Language">
-                      German Language
-                    </option>
-                    <option value="French Language">
-                      French Language
-                    </option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="English Spoken">English Spoken</option>
+                    <option value="German Language">German Language</option>
+                    <option value="French Language">French Language</option>
                   </select>
 
                   <ValidationError
@@ -467,8 +442,8 @@ const Contact = () => {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl leading-7 text-white/80">
-              Join IISL and take the next step toward your education, skills
-              and career.
+              Join IISL and take the next step toward your education, skills and
+              career.
             </p>
 
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">

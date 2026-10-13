@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 
@@ -13,6 +13,10 @@ const Navbar = () => {
     {
       name: "Home",
       path: "/",
+    },
+    {
+      name: "Tech Service",
+      path: "/tech-service",
     },
     {
       name: "About",
@@ -48,11 +52,6 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // Close mobile menu when route changes
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [location.pathname]);
 
   return (
     <nav

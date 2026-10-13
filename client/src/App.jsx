@@ -11,6 +11,7 @@ import Contact from "./Pages/Contact/Contact";
 import WhyUs from "./Pages/WhyUs/WhyUs";
 import Home from "./Pages/Home/Home";
 import Media from "./Pages/Media/Media";
+import TechService from "./Pages/TechService/TechService";
 
 function AppContent() {
   const location = useLocation();
@@ -77,6 +78,7 @@ function AppContent() {
       <main className="flex-1">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/tech-service" element={<TechService />} />
           <Route path="/about" element={<About />} />
           <Route path="/why-us" element={<WhyUs />} />
           <Route path="/courses" element={<Course />} />

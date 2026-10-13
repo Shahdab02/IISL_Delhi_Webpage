@@ -1,4 +1,3 @@
-import React from 'react'
 import Slider from './Slider'
 import WhyUs from './WhyUs'
 import About from './About'

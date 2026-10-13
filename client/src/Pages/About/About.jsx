@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Award,
   BookOpen,
@@ -93,12 +92,12 @@ const About = () => {
   return (
     <main className="overflow-hidden bg-white text-slate-900">
      
-      <section className="relative flex min-h-[650px] items-center overflow-hidden bg-slate-950">
+      <section className="relative flex min-h-162.5 items-center overflow-hidden bg-slate-950">
         {/* Background Effects */}
         <div className="absolute inset-0">
-          <div className="absolute -left-40 -top-40 h-[500px] w-[500px] rounded-full bg-indigo-600/30 blur-3xl" />
-          <div className="absolute -right-32 top-20 h-[500px] w-[500px] rounded-full bg-cyan-500/20 blur-3xl" />
-          <div className="absolute -bottom-48 left-[35%] h-[500px] w-[500px] rounded-full bg-purple-600/20 blur-3xl" />
+          <div className="absolute -left-40 -top-40 h-125 w-125 rounded-full bg-indigo-600/30 blur-3xl" />
+          <div className="absolute -right-32 top-20 h-125 w-125 rounded-full bg-cyan-500/20 blur-3xl" />
+          <div className="absolute -bottom-48 left-[35%] h-125 w-125 rounded-full bg-purple-600/20 blur-3xl" />
 
           <div
             className="absolute inset-0"
@@ -120,7 +119,7 @@ const About = () => {
             {/* Heading */}
             <h1 className="mt-7 text-4xl font-black leading-[1.08] text-white sm:text-5xl lg:text-7xl">
               Learn Skills.
-              <span className="block bg-gradient-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-indigo-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
                 Build Your Future.
               </span>
             </h1>
@@ -272,7 +271,7 @@ const About = () => {
 
           {/* RIGHT CARD */}
           <div className="relative">
-            <div className="absolute -inset-5 rounded-3xl bg-gradient-to-r from-indigo-500/20 to-cyan-400/20 blur-3xl" />
+            <div className="absolute -inset-5 rounded-3xl bg-linear-to-r from-indigo-500/20 to-cyan-400/20 blur-3xl" />
 
             <div className="relative rounded-3xl bg-slate-950 p-7 shadow-2xl sm:p-9">
               <div className="flex items-center gap-4">
@@ -603,7 +602,7 @@ const About = () => {
 
      {/* final */}
       <section className="px-5 py-20">
-        <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-800 p-8 text-center sm:p-12 lg:p-16">
+        <div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl bg-linear-to-br from-indigo-600 via-indigo-700 to-purple-800 p-8 text-center sm:p-12 lg:p-16">
           <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
           <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-cyan-400/10 blur-3xl" />
 
