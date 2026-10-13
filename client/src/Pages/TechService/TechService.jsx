@@ -24,7 +24,7 @@ const PHONE_NUMBER = "+919310772538";
 const seoPackages = [
   {
     name: "SEO Basic",
-    price: "₹4,999",
+    price: "₹4,999+",
     suffix: "one-time package",
     description: "A strong starting point to make your website easier to find.",
     features: [
@@ -38,7 +38,7 @@ const seoPackages = [
   },
   {
     name: "SEO Growth",
-    price: "₹7,999",
+    price: "₹7,999+",
     suffix: "monthly",
     description: "Consistent local visibility and content for steady growth.",
     features: [
@@ -53,7 +53,7 @@ const seoPackages = [
   },
   {
     name: "SEO Professional",
-    price: "₹9,999",
+    price: "₹9,999+",
     suffix: "monthly",
     description: "A deeper SEO program for businesses ready to compete.",
     features: [
@@ -69,7 +69,7 @@ const seoPackages = [
   },
   {
     name: "SEO Premium",
-    price: "₹14,999",
+    price: "₹14,999+",
     suffix: "monthly",
     description: "A comprehensive strategy for long-term reach and authority.",
     featured: true,
@@ -104,7 +104,7 @@ const websitePackages = [
   },
   {
     name: "Business Website",
-    price: "₹14,999",
+    price: "₹14,999+",
     suffix: "project package",
     description: "A custom business presence with the content to bring it to life.",
     icon: Layers3,
