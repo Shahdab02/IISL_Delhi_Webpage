@@ -159,7 +159,7 @@ const Footer = () => {
                       stroke="none"
                     />
                   </svg>
-                  Instagram
+                  Instagram 
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=61594584294014"
