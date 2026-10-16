@@ -16,6 +16,8 @@ import sir from "../../assets/summit_sir.jpeg";
 import shahdab from "../../assets/shahdab.jpeg";
 import simmi from "../../assets/simmi.jpeg";
 import divya from "../../assets/divya.jpeg";
+import lakshay from "../../assets/lakshay.jpeg";
+import anushka from "../../assets/anushka.png";
 
 const Team = () => {
   const teamMembers = [
@@ -33,7 +35,7 @@ const Team = () => {
       name: "Lakshay Malhotra",
       role: "Head of Marketing",
       icon: Megaphone,
-      image: null,
+      image: lakshay,
       color: "from-purple-500 to-pink-700",
       message:
         "Connecting students with opportunities through strategic marketing, communication, and outreach.",
@@ -68,6 +70,16 @@ const Team = () => {
       message:
         "Helping students improve communication, language skills, confidence, and overall professional development.",
       skills: ["Mentorship", "Languages", "Personality Development"],
+    },
+    {
+      name: "Anushka",
+      role: "Head of German Language & faculty",
+      icon: Languages,
+      image: anushka,
+      color: "from-amber-500 to-orange-700",
+      message:
+        "Teaching German language and guiding students as they build confidence and communication skills.",
+      skills: ["German", "Language Teaching", "Communication"],
     },
   ];
 

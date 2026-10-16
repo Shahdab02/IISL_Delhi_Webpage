@@ -27,7 +27,7 @@ const Footer = () => {
                   IISL
                 </h3>
                 <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#d9b3ff]">
-                  Indian Institute of Skills &amp; Languages
+                  Indian Institute of Skills & Languages
                 </p>
               </div>
             </div>

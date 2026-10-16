@@ -23,6 +23,60 @@ body {
   margin: 0;
 }
 
+.dark {
+  color-scheme: dark;
+  --color-slate-50: #0f172a;
+  --color-slate-100: #1e293b;
+  --color-slate-200: #334155;
+  --color-slate-300: #475569;
+  --color-slate-400: #94a3b8;
+  --color-slate-500: #cbd5e1;
+  --color-slate-600: #d1d5db;
+  --color-slate-700: #e2e8f0;
+  --color-slate-800: #f1f5f9;
+  --color-slate-900: #f8fafc;
+  --color-gray-50: #0f172a;
+  --color-gray-100: #1e293b;
+  --color-gray-200: #334155;
+  --color-gray-700: #cbd5e1;
+  --color-gray-800: #e2e8f0;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark body,
+.dark main {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.dark [class~="bg-white"] {
+  background-color: #1e293b;
+}
+
+.dark [class~="bg-[#f8fafc]"],
+.dark [class~="bg-[#faf9fc]"],
+.dark [class~="bg-[#f3f3f3]"] {
+  background-color: #0f172a;
+}
+
+.dark [class~="via-white"] {
+  --tw-gradient-via: #1e293b;
+}
+
+.dark nav {
+  border-color: rgb(71 85 105 / 65%);
+  background-color: rgb(15 23 42 / 95%) !important;
+}
+
+.dark nav a:not([class~="text-white"]) {
+  color: #e2e8f0;
+}
+
+.dark nav button {
+  color: #e2e8f0;
+}
+
 * {
   box-sizing: border-box;
 }

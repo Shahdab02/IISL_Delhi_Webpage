@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { Moon, Sun } from "lucide-react";
 import logo from "../../assets/logo.jpeg";
 
-const Navbar = () => {
+const Navbar = ({ isDarkMode, onToggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -134,6 +135,15 @@ const Navbar = () => {
 
           {/* ================= DESKTOP BUTTON ================= */}
           <div className="hidden md:flex items-center gap-3">
+            <button
+              type="button"
+              onClick={onToggleTheme}
+              aria-label={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
+              title={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
+              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#2d0d4d] shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f]"
+            >
+              {isDarkMode ? <Sun size={19} /> : <Moon size={19} />}
+            </button>
 
             <Link
               to="/admission"
@@ -156,13 +166,24 @@ const Navbar = () => {
           </div>
 
           {/* ================= MOBILE BUTTON ================= */}
-          <button
-            onClick={() => setIsMenuOpen(true)}
-            className="md:hidden"
-            aria-label="Open menu"
-          >
-            <span className="text-2xl">☰</span>
-          </button>
+          <div className="flex items-center gap-3 md:hidden">
+            <button
+              type="button"
+              onClick={onToggleTheme}
+              aria-label={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
+              title={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
+              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#2d0d4d] shadow-sm transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f]"
+            >
+              {isDarkMode ? <Sun size={19} /> : <Moon size={19} />}
+            </button>
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="md:hidden"
+              aria-label="Open menu"
+            >
+              <span className="text-2xl">☰</span>
+            </button>
+          </div>
 
         </div>
       </div>
