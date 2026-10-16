@@ -55,9 +55,9 @@ const Media = () => {
       : mediaItems.filter((item) => item.tag === selectedCategory);
 
   return (
-    <div className="bg-slate-50 text-slate-900">
-      <section className="relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(90,45,143,0.25),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(217,179,255,0.20),transparent_30%)]" />
+    <div className="media-page bg-slate-50 text-slate-900">
+      <section className="media-hero relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
+        <div className="media-hero-glow absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(90,45,143,0.25),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(217,179,255,0.20),transparent_30%)]" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
           <div className="grid items-center gap-10 lg:grid-cols-[1.2fr_0.8fr]">
@@ -131,7 +131,7 @@ const Media = () => {
               <span className="text-sm font-bold uppercase tracking-[0.22em] text-blue-600">
                 Media Library
               </span>
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
+              <h2 className="media-section-title mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                 Highlights from the IISL journey
               </h2>
             </div>
@@ -143,7 +143,7 @@ const Media = () => {
                   type="button"
                   onClick={() => setSelectedCategory(category)}
                   aria-pressed={selectedCategory === category}
-                  className={`rounded-full px-3 py-1.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
+                  className={`media-category-filter rounded-full px-3 py-1.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 ${
                     selectedCategory === category
                       ? "bg-blue-600 text-white"
                       : "bg-slate-200 text-slate-700 hover:bg-slate-300"
@@ -164,7 +164,7 @@ const Media = () => {
             {filteredMedia.map((item, index) => (
               <div
                 key={`${item.type}-${index}`}
-                className="group overflow-hidden rounded-[1.8rem] border border-slate-200 bg-white shadow-sm transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
+                className="media-gallery-card group overflow-hidden rounded-[1.8rem] border border-slate-200 bg-white shadow-sm transition duration-500 hover:-translate-y-2 hover:shadow-2xl"
               >
                 <div className="relative overflow-hidden">
                   {item.type === "image" ? (

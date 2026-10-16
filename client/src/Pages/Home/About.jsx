@@ -1,5 +1,5 @@
 import { ArrowUpRight, BookOpen, MapPin } from "lucide-react";
-import instituteLogo from "../../assets/logo.jpeg";
+import instituteLogo from "../../assets/logoold.jpeg";
 
 const learningAreas = [
 	"Computer education",
@@ -10,11 +10,11 @@ const learningAreas = [
 const About = () => (
 	<section className="bg-slate-50 px-5 py-14 text-slate-900 sm:px-8 lg:py-20">
 		<div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-2 lg:gap-16">
-			<div className="flex items-center justify-center rounded-2xl bg-white p-6 sm:p-8">
+			<div className="about-logo-panel flex items-center justify-center overflow-hidden rounded-2xl border border-slate-200/70 bg-white p-3 shadow-sm sm:p-5">
 				<img
 					src={instituteLogo}
 					alt="Indian Institute of Skills & Languages logo"
-					className="h-auto max-h-64 w-full max-w-md object-contain"
+					className="h-auto w-full max-w-none object-contain"
 				/>
 			</div>
 

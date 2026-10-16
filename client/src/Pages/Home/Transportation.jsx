@@ -259,7 +259,7 @@ const Transportation = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className="rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
+                className="transport-step-card rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
                 <div className="flex items-center justify-between">
                   <span className="text-4xl font-black text-indigo-100">

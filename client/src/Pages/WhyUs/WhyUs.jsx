@@ -257,7 +257,7 @@ const WhyUs = () => {
             return (
               <div
                 key={index}
-                className="border-b border-slate-100 p-5 text-center transition hover:bg-slate-50 md:border-b-0 md:border-r last:border-r-0"
+                className="why-us-stat-card border-b border-slate-100 p-5 text-center transition hover:bg-slate-50 md:border-b-0 md:border-r last:border-r-0"
               >
                 <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
                   <Icon size={21} />
@@ -429,7 +429,7 @@ const WhyUs = () => {
               return (
                 <div
                   key={index}
-                  className="group rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:shadow-slate-200/70"
+                  className="why-us-feature-card group rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:shadow-slate-200/70"
                 >
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white">
                     <Icon size={23} />
@@ -553,7 +553,7 @@ const WhyUs = () => {
               return (
                 <div
                   key={index}
-                  className="relative rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
+                  className="why-us-journey-card relative rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
                 >
                   <div className="flex items-center justify-between">
                     <span className="text-4xl font-black text-indigo-100">

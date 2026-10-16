@@ -16,13 +16,10 @@ import TechService from "./Pages/TechService/TechService";
 
 function AppContent() {
   const location = useLocation();
-  const [isDarkMode, setIsDarkMode] = useState(
-    () => localStorage.getItem("iisl-theme") === "dark",
-  );
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDarkMode);
-    localStorage.setItem("iisl-theme", isDarkMode ? "dark" : "light");
   }, [isDarkMode]);
 
   useEffect(() => {
@@ -119,7 +116,7 @@ function AppContent() {
           to="/contact"
           aria-label="Drop an enquiry"
           title="Drop an enquiry"
-          className="inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-xs font-bold text-[#2d0d4d] shadow-md transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f] sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
+          className="quick-enquiry-action inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-xs font-bold text-[#2d0d4d] shadow-md transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f] sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
         >
           <MessageSquareText size={17} aria-hidden="true" />
           <span className="sr-only sm:not-sr-only">Enquiry</span>

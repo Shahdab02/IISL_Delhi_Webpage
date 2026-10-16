@@ -79,10 +79,10 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               className="h-14 w-auto object-contain"
             />
             <div className="hidden sm:block leading-tight">
-              <div className="text-[2rem] font-black tracking-tight text-[#2d0d4d]">
+              <div className="navbar-brand-title text-[2rem] font-black tracking-tight text-[#2d0d4d]">
                 IISL
               </div>
-              <div className="text-[10px] uppercase tracking-[0.22em] text-[#5f4f71] font-semibold">
+              <div className="navbar-brand-caption text-[10px] uppercase tracking-[0.22em] text-[#5f4f71] font-semibold">
                 Indian Institute of Skills &amp; Languages
               </div>
             </div>

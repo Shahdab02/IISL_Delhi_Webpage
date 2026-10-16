@@ -14,9 +14,9 @@ const Contact = () => {
   const [state, handleSubmit] = useForm("mdeakaag");
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="contact-page min-h-screen bg-slate-50">
       {/*HERO SECTION */}
-      <section className="relative overflow-hidden bg-linear-to-br from-[#f7f2fb] via-white to-[#f3edf9]">
+      <section className="contact-hero relative overflow-hidden bg-linear-to-br from-[#f7f2fb] via-white to-[#f3edf9]">
         <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#5a2d8f]/10 blur-3xl" />
         <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-[#d9b3ff]/20 blur-3xl" />
 
@@ -65,7 +65,7 @@ const Contact = () => {
       </section>
 
       {/* CONTACT INFORMATION */}
-      <section className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-3">
+      <section className="contact-info-section mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-3">
         <div className="mb-10 text-center">
           <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
             Get In Touch
@@ -85,7 +85,7 @@ const Contact = () => {
           {/* PHONE */}
           <a
             href="tel:+919310772538"
-            className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f] transition group-hover:bg-[#5a2d8f] group-hover:text-white">
               <Phone size={23} />
@@ -103,7 +103,7 @@ const Contact = () => {
           {/* EMAIL */}
           <a
             href="mailto:iisldelhi@gmail.com"
-            className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600 transition group-hover:bg-orange-500 group-hover:text-white">
               <Mail size={23} />
@@ -121,7 +121,7 @@ const Contact = () => {
             href="https://www.google.com/maps/search/?api=1&query=647+Gram+Sabha+Rohini+Sector+23+Delhi"
             target="_blank"
             rel="noreferrer"
-            className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f] transition group-hover:bg-[#5a2d8f] group-hover:text-white">
               <MapPin size={23} />
@@ -145,7 +145,7 @@ const Contact = () => {
             href="https://iisldelhi.com/"
             target="_blank"
             rel="noreferrer"
-            className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 transition group-hover:bg-blue-500 group-hover:text-white">
               <Globe size={23} />
@@ -161,7 +161,7 @@ const Contact = () => {
       </section>
 
       {/*CONTACT FORM SECTION*/}
-      <section id="contact-form" className="bg-white py-16 sm:py-20">
+      <section id="contact-form" className="contact-form-section bg-white py-16 sm:py-20">
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:px-3">
           {/* LEFT CONTENT */}
           <div className="flex flex-col justify-center">
@@ -217,7 +217,7 @@ const Contact = () => {
           </div>
 
           {/* FORM */}
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-xl sm:p-8">
+          <div className="contact-form-card rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-xl sm:p-8">
             {state.succeeded ? (
               <div className="flex min-h-112.5 flex-col items-center justify-center text-center">
                 <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
@@ -403,7 +403,7 @@ const Contact = () => {
       </section>
 
       {/*GOOGLE MAP SECTION*/}
-      <section className="bg-slate-50 py-16">
+      <section className="contact-map-section bg-slate-50 py-16">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-3">
           <div className="mb-8 text-center">
             <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
@@ -419,7 +419,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
+          <div className="contact-map-frame overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
             <iframe
               title="IISL Location"
               src="https://www.google.com/maps?q=647%20Gram%20Sabha%2C%20Rohini%20Sector%2023%2C%20Delhi&output=embed"

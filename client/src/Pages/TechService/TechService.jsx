@@ -163,9 +163,9 @@ const createWhatsAppLink = (packageName) => {
 function PackageCard({ item, category }) {
   return (
     <article
-      className={`relative flex h-full flex-col rounded-3xl border p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7 ${
+      className={`tech-package-card relative flex h-full flex-col rounded-3xl border p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7 ${
         item.featured
-          ? "border-[#5a2d8f] bg-[#1f1230] text-white shadow-[#1f1230]/15"
+          ? "tech-package-featured border-[#5a2d8f] bg-[#1f1230] text-white shadow-[#1f1230]/15"
           : "border-slate-200 bg-white text-slate-900 hover:border-[#5a2d8f]/30"
       }`}
     >
@@ -250,7 +250,7 @@ function PackageCard({ item, category }) {
         rel="noreferrer"
         className={`mt-7 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-bold transition focus-visible:outline-2 focus-visible:outline-offset-2 ${
           item.featured
-            ? "bg-white text-[#2d0d4d] hover:bg-[#f4eaff] focus-visible:outline-white"
+            ? "tech-package-featured-cta bg-white text-[#2d0d4d] hover:bg-[#f4eaff] focus-visible:outline-white"
             : "bg-[#5a2d8f] text-white hover:bg-[#4b2378] focus-visible:outline-[#5a2d8f]"
         }`}
       >
@@ -264,7 +264,7 @@ function PackageCard({ item, category }) {
 
 function SectionHeading({ eyebrow, title, description }) {
   return (
-    <div className="mx-auto mb-10 max-w-2xl text-center sm:mb-12">
+    <div className="tech-service-section-heading mx-auto mb-10 max-w-2xl text-center sm:mb-12">
       <p className="text-xs font-bold uppercase tracking-[0.22em] text-[#6e42a0]">
         {eyebrow}
       </p>
@@ -278,7 +278,7 @@ function SectionHeading({ eyebrow, title, description }) {
 
 const TechService = () => {
   return (
-    <div className="overflow-hidden bg-[#faf9fc]">
+    <div className="tech-service-page overflow-hidden bg-[#faf9fc]">
       <section className="relative isolate overflow-hidden bg-[#1f1230] text-white">
         <div className="absolute -left-36 -top-36 -z-10 h-112 w-md rounded-full bg-[#7546aa]/30 blur-3xl" />
         <div className="absolute -right-40 top-12 -z-10 h-104 w-104 rounded-full bg-[#d9b3ff]/15 blur-3xl" />
@@ -369,7 +369,7 @@ const TechService = () => {
         </div>
       </section>
 
-      <section className="border-b border-slate-200 bg-white">
+      <section className="tech-service-filterbar border-b border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-5 sm:px-8 md:flex-row md:items-center md:justify-between lg:px-8">
           <p className="text-sm font-semibold text-slate-700">
             Find the right service for your next step
@@ -432,7 +432,7 @@ const TechService = () => {
       </section>
 
       <section className="px-5 py-14 sm:px-8 sm:py-16 lg:px-8">
-        <div className="mx-auto flex max-w-5xl flex-col gap-7 rounded-4xl bg-[#f0e9f7] p-6 sm:p-9 md:flex-row md:items-center md:justify-between">
+        <div className="tech-service-custom-cta mx-auto flex max-w-5xl flex-col gap-7 rounded-4xl bg-[#f0e9f7] p-6 sm:p-9 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#5a2d8f]">
               Have a different scope in mind?
@@ -457,7 +457,7 @@ const TechService = () => {
             </a>
             <a
               href={`tel:${PHONE_NUMBER}`}
-              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[#5a2d8f]/20 bg-white px-5 py-3 text-sm font-bold text-[#4b2378] transition hover:border-[#5a2d8f]/50"
+              className="tech-service-call-action inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-[#5a2d8f]/20 bg-white px-5 py-3 text-sm font-bold text-[#4b2378] transition hover:border-[#5a2d8f]/50"
             >
               <Phone size={17} aria-hidden="true" />
               Call 93107 72538
