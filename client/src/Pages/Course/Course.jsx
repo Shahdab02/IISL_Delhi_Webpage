@@ -265,7 +265,7 @@ const Courses = () => {
           SEARCH + FILTER
       ====================================================== */}
       <section className="sticky top-0 z-30 mx-auto mt-8 max-w-7xl px-5 sm:px-6 lg:px-8">
-        <div className="rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-lg shadow-slate-200/40 backdrop-blur-md">
+        <div className="course-filter-panel rounded-2xl border border-slate-200 bg-white/95 p-4 shadow-lg shadow-slate-200/40 backdrop-blur-md">
           <div className="flex flex-col gap-4 lg:flex-row">
             {/* Search */}
             <div className="relative flex-1">
@@ -279,7 +279,7 @@ const Courses = () => {
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 placeholder="Search courses, skills..."
-                className="h-12 w-full rounded-xl border border-slate-200 bg-slate-50 pl-12 pr-11 text-sm font-medium text-slate-700 outline-none transition focus:border-[#5a2d8f] focus:bg-white focus:ring-4 focus:ring-[#5a2d8f]/10"
+                className="course-search-input h-12 w-full rounded-xl border border-slate-200 bg-slate-50 pl-12 pr-11 text-sm font-medium text-slate-700 outline-none transition focus:border-[#5a2d8f] focus:bg-white focus:ring-4 focus:ring-[#5a2d8f]/10"
               />
 
               {searchTerm && (
@@ -298,7 +298,7 @@ const Courses = () => {
                 <button
                   key={level}
                   onClick={() => setSelectedLevel(level)}
-                  className={`rounded-xl px-4 py-3 text-sm font-bold transition-all ${
+                  className={`course-level-filter rounded-xl px-4 py-3 text-sm font-bold transition-all ${
                     selectedLevel === level
                       ? "bg-[#5a2d8f] text-white shadow-md shadow-[#5a2d8f]/20"
                       : "bg-slate-100 text-slate-600 hover:bg-slate-200"
