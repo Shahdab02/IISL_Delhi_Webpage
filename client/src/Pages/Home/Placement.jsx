@@ -1,5 +1,5 @@
 import { ArrowUpRight, BriefcaseBusiness, FileText, MessageCircle } from "lucide-react";
-import placementImage from "../../assets/placemeent.jpeg";
+import placementImage from "../../assets/optimized/placemeent.jpg";
 
 const Placement = () => {
 	const supportAreas = [
@@ -27,6 +27,10 @@ const Placement = () => {
 					<img
 						src={placementImage}
 						alt="Students preparing for career opportunities"
+						width="1000"
+						height="558"
+						loading="lazy"
+						decoding="async"
 						className="aspect-[4/3] w-full rounded-2xl object-cover shadow-xl"
 					/>
 					{/* <div className="absolute bottom-4 left-4 rounded-lg bg-white px-4 py-3 shadow-lg sm:bottom-6 sm:left-6">

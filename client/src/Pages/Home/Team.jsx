@@ -12,12 +12,21 @@ import {
   Users,
 } from "lucide-react";
 
-import sir from "../../assets/summit_sir.jpeg";
-import shahdab from "../../assets/shahdab.jpeg";
-import simmi from "../../assets/simmi.jpeg";
-import divya from "../../assets/divya.jpeg";
-import lakshay from "../../assets/lakshay.jpeg";
-import anushka from "../../assets/anushka.png";
+import sir from "../../assets/optimized/summit_sir.jpg";
+import shahdab from "../../assets/optimized/shahdab.jpg";
+import simmi from "../../assets/optimized/simmi.jpg";
+import divya from "../../assets/optimized/divya.jpg";
+import lakshay from "../../assets/optimized/lakshay.jpg";
+import anushka from "../../assets/optimized/anushka.jpg";
+
+const teamImageDimensions = {
+  "Sumit Agarwal": { width: 600, height: 600 },
+  "Lakshay Malhotra": { width: 600, height: 900 },
+  "Md Shahdab": { width: 600, height: 795 },
+  Simmi: { width: 600, height: 800 },
+  "Divya Sharma": { width: 600, height: 779 },
+  Anushka: { width: 600, height: 1067 },
+};
 
 const Team = () => {
   const teamMembers = [
@@ -266,7 +275,11 @@ const Team = () => {
                         <img
                           src={member.image}
                           alt={member.name}
-                          className="absolute inset-0 z-20 h-full w-full object-fill object-top transition-transform duration-500 group-hover:scale-[1.01]"
+                          width={teamImageDimensions[member.name].width}
+                          height={teamImageDimensions[member.name].height}
+                          loading="lazy"
+                          decoding="async"
+                          className="absolute inset-0 z-20 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.01]"
                         />
 
                         {/* Very light overlay */}

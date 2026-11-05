@@ -6,7 +6,7 @@ import {
   MessageCircle,
   Phone,
 } from "lucide-react";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/optimized/logo.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,6 +20,10 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="IISL"
+                width="300"
+                height="300"
+                loading="lazy"
+                decoding="async"
                 className="h-14 w-auto rounded-lg object-contain"
               />
               <div>

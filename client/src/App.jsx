@@ -1,22 +1,91 @@
 import { BrowserRouter, Routes, Route, Link, useLocation } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { MessageCircle, MessageSquareText } from "lucide-react";
 
 import Topbar from "./Component/Topbar/Topbar";
 import Navbar from "./Component/Navbar/Navbar";
 import Footer from "./Component/Footer/Footer";
-import About from "./Pages/About/About";
-import Course from "./Pages/Course/Course";
-import Admission from "./Pages/Admission/Admission";
-import Contact from "./Pages/Contact/Contact";
-import WhyUs from "./Pages/WhyUs/WhyUs";
 import Home from "./Pages/Home/Home";
-import Media from "./Pages/Media/Media";
-import TechService from "./Pages/TechService/TechService";
+
+const About = lazy(() => import("./Pages/About/About"));
+const Course = lazy(() => import("./Pages/Course/Course"));
+const Admission = lazy(() => import("./Pages/Admission/Admission"));
+const Contact = lazy(() => import("./Pages/Contact/Contact"));
+const WhyUs = lazy(() => import("./Pages/WhyUs/WhyUs"));
+const Media = lazy(() => import("./Pages/Media/Media"));
+const TechService = lazy(() => import("./Pages/TechService/TechService"));
+
+const pageMetadata = {
+  "/": {
+    title: "IISL Delhi | Skills & Language Courses in Rohini",
+    description:
+      "Learn practical computer, digital marketing, web development, and language skills at IISL in Rohini, Delhi. Explore courses and enquire about admissions.",
+  },
+  "/about": {
+    title: "About IISL Delhi | Practical Skills & Language Learning",
+    description:
+      "Learn about Indian Institute of Skills & Languages, a practical skills and language learning institute in Rohini, Delhi.",
+  },
+  "/why-us": {
+    title: "Why Choose IISL Delhi | Practical, Career-Focused Learning",
+    description:
+      "Discover IISL's practical learning, personal mentorship, career-focused skills, and student support in Rohini, Delhi.",
+  },
+  "/courses": {
+    title: "Courses at IISL Delhi | Computer, Digital Marketing & Languages",
+    description:
+      "Explore computer, digital marketing, web development, English, German, and French courses at IISL in Rohini, Delhi.",
+  },
+  "/admission": {
+    title: "Admissions at IISL Delhi | Enquire About Courses",
+    description:
+      "Explore the IISL admission process and enquire about practical skills and language courses in Rohini, Delhi.",
+  },
+  "/contact": {
+    title: "Contact IISL Delhi | Rohini Sector 23",
+    description:
+      "Contact IISL about courses and admissions, or find the institute at Rohini Sector 23, Delhi.",
+  },
+  "/media": {
+    title: "IISL Delhi Media Gallery | Campus Photos & Videos",
+    description:
+      "View campus, classroom, workshop, and student moments from Indian Institute of Skills & Languages in Delhi.",
+  },
+  "/tech-service": {
+    title: "Website & SEO Services | IISL Delhi",
+    description:
+      "Explore website development and SEO services from IISL, alongside practical skills training in Delhi.",
+  },
+};
 
 function AppContent() {
   const location = useLocation();
   const [isDarkMode, setIsDarkMode] = useState(true);
+
+  useEffect(() => {
+    const metadata = pageMetadata[location.pathname] ?? pageMetadata["/"];
+    const pageUrl = new URL(location.pathname, window.location.origin).href;
+    const description = document.querySelector('meta[name="description"]');
+    const canonical = document.querySelector('link[rel="canonical"]');
+    const openGraphTitle = document.querySelector('meta[property="og:title"]');
+    const openGraphDescription = document.querySelector(
+      'meta[property="og:description"]',
+    );
+    const openGraphUrl = document.querySelector('meta[property="og:url"]');
+    const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+    const twitterDescription = document.querySelector(
+      'meta[name="twitter:description"]',
+    );
+
+    document.title = metadata.title;
+    description?.setAttribute("content", metadata.description);
+    canonical?.setAttribute("href", pageUrl);
+    openGraphTitle?.setAttribute("content", metadata.title);
+    openGraphDescription?.setAttribute("content", metadata.description);
+    openGraphUrl?.setAttribute("content", pageUrl);
+    twitterTitle?.setAttribute("content", metadata.title);
+    twitterDescription?.setAttribute("content", metadata.description);
+  }, [location.pathname]);
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", isDarkMode);
@@ -85,17 +154,19 @@ function AppContent() {
       />
 
       <main className="flex-1">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/tech-service" element={<TechService />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/why-us" element={<WhyUs />} />
-          <Route path="/courses" element={<Course />} />
-          <Route path="/media" element={<Media />} />
-          <Route path="/admission" element={<Admission />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<Home />} />
-        </Routes>
+        <Suspense fallback={null}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/tech-service" element={<TechService />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/why-us" element={<WhyUs />} />
+            <Route path="/courses" element={<Course />} />
+            <Route path="/media" element={<Media />} />
+            <Route path="/admission" element={<Admission />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Home />} />
+          </Routes>
+        </Suspense>
       </main>
 
       <Footer />

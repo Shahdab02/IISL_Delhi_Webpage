@@ -1,5 +1,5 @@
 import { ArrowUpRight, BookOpen, MapPin } from "lucide-react";
-import instituteLogo from "../../assets/logoold.jpeg";
+import instituteLogo from "../../assets/optimized/logoold.jpg";
 
 const learningAreas = [
 	"Computer education",
@@ -14,6 +14,10 @@ const About = () => (
 				<img
 					src={instituteLogo}
 					alt="Indian Institute of Skills & Languages logo"
+					width="1000"
+					height="666"
+					loading="lazy"
+					decoding="async"
 					className="h-auto w-full max-w-none object-contain"
 				/>
 			</div>

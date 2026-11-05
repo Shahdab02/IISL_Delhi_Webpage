@@ -1,38 +1,40 @@
 import { useState } from "react";
 import { ArrowRight, Camera, Film, Play, Sparkles, Video } from "lucide-react";
 
-import media1 from "../../assets/media/media1.jpeg";
-import media2 from "../../assets/media/media2.jpeg";
-import media3 from "../../assets/media/media3.jpeg";
-import media4 from "../../assets/media/media4.jpeg";
-import media5 from "../../assets/media/media5.jpeg";
-import media6 from "../../assets/media/media6.jpeg";
-import media8 from "../../assets/media/media8.jpeg";
-import media10 from "../../assets/media/media10.jpeg";
-import media11 from "../../assets/media/media11.jpeg";
-import media12 from "../../assets/media/media12.jpeg";
-import media13 from "../../assets/media/media13.jpeg";
+import iislimg1 from "../../assets/media/iislimg1.png";
+import iislimg2 from "../../assets/media/iislimg2.jpeg";
+import media1 from "../../assets/optimized/media1.jpg";
+import media2 from "../../assets/optimized/media2.jpg";
+import media3 from "../../assets/optimized/media3.jpg";
+import media4 from "../../assets/optimized/media4.jpg";
+import media5 from "../../assets/optimized/media5.jpg";
+import media6 from "../../assets/optimized/media6.jpg";
+import media8 from "../../assets/optimized/media8.jpg";
+import media10 from "../../assets/optimized/media10.jpg";
+import media11 from "../../assets/optimized/media11.jpg";
+import media12 from "../../assets/optimized/media12.jpg";
+import media13 from "../../assets/optimized/media13.jpg";
 import mvideo1 from "../../assets/media/mvideo1.mp4";
 import mvideo2 from "../../assets/media/mvideo2.mp4";
 import mvideo3 from "../../assets/media/mvideo3.mp4";
 import mvideo4 from "../../assets/media/mvideo4.mp4";
 
 const mediaItems = [
-  { type: "image", src: media1, title: "Campus Moment 1", tag: "Campus" },
-  { type: "image", src: media2, title: "Campus Moment 2", tag: "Learning" },
+  { type: "image", src: media1, width: 640, height: 480, title: "Campus Moment 1", tag: "Campus" },
+  { type: "image", src: media2, width: 640, height: 480, title: "Campus Moment 2", tag: "Learning" },
   { type: "video", src: mvideo1, title: "Campus Video 1", tag: "Highlights" },
-  { type: "image", src: media3, title: "Campus Moment 3", tag: "Events" },
-  { type: "image", src: media4, title: "Campus Moment 4", tag: "Mentoring" },
-  { type: "image", src: media5, title: "Campus Moment 5", tag: "Students" },
+  { type: "image", src: media3, width: 640, height: 853, title: "Campus Moment 3", tag: "Events" },
+  { type: "image", src: media4, width: 640, height: 853, title: "Campus Moment 4", tag: "Mentoring" },
+  { type: "image", src: media5, width: 640, height: 853, title: "Campus Moment 5", tag: "Students" },
   { type: "video", src: mvideo2, title: "Campus Video 2", tag: "Training" },
-  { type: "image", src: media6, title: "Campus Moment 6", tag: "Workshop" },
-  { type: "image", src: media8, title: "Campus Moment 8", tag: "Campus" },
+  { type: "image", src: media6, width: 640, height: 853, title: "Campus Moment 6", tag: "Workshop" },
+  { type: "image", src: media8, width: 640, height: 360, title: "Campus Moment 8", tag: "Campus" },
   { type: "video", src: mvideo3, title: "Campus Video 3", tag: "Success" },
-  { type: "image", src: media10, title: "Campus Moment 10", tag: "Activities" },
-  { type: "image", src: media11, title: "Campus Moment 11", tag: "Community" },
+  { type: "image", src: media10, width: 640, height: 853, title: "Campus Moment 10", tag: "Activities" },
+  { type: "image", src: media11, width: 640, height: 853, title: "Campus Moment 11", tag: "Community" },
   { type: "video", src: mvideo4, title: "Campus Video 4", tag: "Story" },
-  { type: "image", src: media12, title: "Campus Moment 12", tag: "Career" },
-  { type: "image", src: media13, title: "Campus Moment 13", tag: "Celebration" },
+  { type: "image", src: media12, width: 640, height: 853, title: "Campus Moment 12", tag: "Career" },
+  { type: "image", src: media13, width: 640, height: 853, title: "Campus Moment 13", tag: "Celebration" },
 ];
 
 const photoCount = mediaItems.filter((item) => item.type === "image").length;
@@ -124,6 +126,41 @@ const Media = () => {
         </div>
       </section>
 
+      <section className="px-4 pb-12 pt-8 sm:px-6 lg:px-8 lg:pb-14 lg:pt-10">
+        <div className="mx-auto max-w-[1280px]">
+          <div className="mb-8 text-left lg:mb-10">
+            <span className="inline-block text-[0.7rem] font-bold uppercase tracking-[0.28em] text-[#66d8ff] sm:text-xs">
+              Featured Moments
+            </span>
+            <h2 className="mt-4 text-[1.8rem] font-black leading-[0.98] tracking-[-0.06em] text-white sm:text-[3.2rem] lg:text-[4rem]">
+              Celebrating IISL achievements
+            </h2>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+            <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-[#1A2C3E] p-2 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
+              <img
+                src={iislimg1}
+                alt="IISL recognition and honorary doctorate award"
+                loading="lazy"
+                decoding="async"
+                className="h-[420px] w-full rounded-[1.45rem] object-cover shadow-inner sm:h-[590px]"
+              />
+            </div>
+
+            <div className="overflow-hidden rounded-[1.8rem] border border-white/10 bg-[#1A2C3E] p-2 shadow-[0_18px_40px_rgba(0,0,0,0.28)]">
+              <img
+                src={iislimg2}
+                alt="IISL team celebrating an educational achievement"
+                loading="lazy"
+                decoding="async"
+                className="h-[420px] w-full rounded-[1.45rem] object-cover shadow-inner sm:h-[590px]"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="px-5 py-16 sm:px-8 lg:px-12 lg:py-20">
         <div className="mx-auto max-w-7xl">
           <div className="mb-10 flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
@@ -171,6 +208,10 @@ const Media = () => {
                     <img
                       src={item.src}
                       alt={item.title}
+                      width={item.width}
+                      height={item.height}
+                      loading="lazy"
+                      decoding="async"
                       className="h-80 w-full object-cover transition duration-700 group-hover:scale-105"
                     />
                   ) : (

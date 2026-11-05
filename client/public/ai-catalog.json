@@ -1,0 +1,53 @@
+{
+  "name": "Indian Institute of Skills & Languages",
+  "alternateName": "IISL Delhi",
+  "url": "https://www.iisldelhi.com/",
+  "description": "Skills and language learning institute in Rohini, Delhi, offering practical computer education, digital marketing, web development, and language courses.",
+  "address": {
+    "streetAddress": "647 Gram Sabha, Rohini Sector 23",
+    "addressLocality": "Delhi",
+    "addressCountry": "IN"
+  },
+  "pages": [
+    {
+      "url": "https://www.iisldelhi.com/",
+      "name": "Home",
+      "description": "Overview of IISL courses, learning approach, career support, and team."
+    },
+    {
+      "url": "https://www.iisldelhi.com/about",
+      "name": "About IISL",
+      "description": "Information about the institute, its learning approach, and programs."
+    },
+    {
+      "url": "https://www.iisldelhi.com/courses",
+      "name": "Courses",
+      "description": "Course information for computer, digital marketing, web development, and language learning."
+    },
+    {
+      "url": "https://www.iisldelhi.com/admission",
+      "name": "Admissions",
+      "description": "Admission steps and enquiry information."
+    },
+    {
+      "url": "https://www.iisldelhi.com/why-us",
+      "name": "Why IISL",
+      "description": "Information about IISL's practical learning and student support."
+    },
+    {
+      "url": "https://www.iisldelhi.com/media",
+      "name": "Media gallery",
+      "description": "Photos and videos from IISL."
+    },
+    {
+      "url": "https://www.iisldelhi.com/contact",
+      "name": "Contact and location",
+      "description": "Contact options and location in Rohini, Delhi."
+    },
+    {
+      "url": "https://www.iisldelhi.com/tech-service",
+      "name": "Digital services",
+      "description": "Website and SEO services offered by IISL."
+    }
+  ]
+}

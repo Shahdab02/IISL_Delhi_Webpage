@@ -1,13 +1,18 @@
 import { useRef, useState } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-import hero1 from "../../assets/hero1.png";
-import hero2 from "../../assets/hero2.jpeg";
-import hero3 from "../../assets/hero3.png";
-import hero4 from "../../assets/hero4.png";
+import hero1 from "../../assets/optimized/hero1.jpg";
+import hero2 from "../../assets/optimized/hero2.jpg";
+import hero3 from "../../assets/optimized/hero3.jpg";
+import hero4 from "../../assets/optimized/hero4.jpg";
 // import hero5 from "../../assets/hero5.png";
 
-const slides = [hero1, hero2, hero3, hero4];
+const slides = [
+  { src: hero1, width: 1920, height: 700, alt: "Digital marketing services banner" },
+  { src: hero2, width: 1599, height: 589, alt: "IISL learning and training banner" },
+  { src: hero3, width: 1920, height: 700, alt: "Digital marketing training banner" },
+  { src: hero4, width: 1920, height: 700, alt: "IISL skills and education banner" },
+];
 
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -58,8 +63,13 @@ const Slider = () => {
           {slides.map((slide, index) => (
             <img
               key={index}
-              src={slide}
-              alt={`IISL Slide ${index + 1}`}
+              src={slide.src}
+              alt={slide.alt}
+              width={slide.width}
+              height={slide.height}
+              loading={index === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={index === 0 ? "high" : "auto"}
               draggable="false"
               className={`
                 block
@@ -214,36 +224,54 @@ const Slider = () => {
               sm:backdrop-blur-md
             "
           >
-            {slides.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                onClick={() => setCurrentSlide(index)}
-                aria-label={`Go to slide ${index + 1}`}
-                aria-current={currentSlide === index ? "true" : undefined}
-                className={`
-                  flex
-                  h-6
-                  w-6
-                  items-center
-                  justify-center
-                  rounded-full
-                  transition-all
-                  duration-500
-                  sm:h-auto
-                  sm:w-auto
-                  sm:p-0
-                `}
-              >
-                <span
-                  className={`block h-1.5 rounded-full transition-all duration-500 sm:h-2 ${
-                    currentSlide === index
-                      ? "w-5 bg-white sm:w-8"
-                      : "w-1.5 bg-white/50 hover:bg-white sm:w-2"
+            {slides.map((_, index) => {
+              const isCurrentSlide = currentSlide === index;
+
+              return (
+                <div
+                  key={index}
+                  className={`relative h-6 w-6 sm:h-2 ${
+                    isCurrentSlide ? "sm:w-8" : "sm:w-2"
                   }`}
-                />
-              </button>
-            ))}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setCurrentSlide(index)}
+                    aria-label={`Go to slide ${index + 1}`}
+                    aria-current={isCurrentSlide ? "true" : undefined}
+                    className="
+                      absolute
+                      left-1/2
+                      top-1/2
+                      flex
+                      h-11
+                      w-11
+                      -translate-x-1/2
+                      -translate-y-1/2
+                      items-center
+                      justify-center
+                      rounded-full
+                      transition-all
+                      duration-500
+                      sm:static
+                      sm:h-auto
+                      sm:w-auto
+                      sm:translate-x-0
+                      sm:translate-y-0
+                      sm:p-0
+                    "
+                  >
+                    <span
+                      className={`block h-1.5 rounded-full transition-all duration-500 sm:h-2 ${
+                        isCurrentSlide
+                          ? "w-5 bg-white sm:w-8"
+                          : "w-1.5 bg-white/50 hover:bg-white sm:w-2"
+                      }`}
+                    />
+                  </button>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -252,3 +280,6 @@ const Slider = () => {
 };
 
 export default Slider;
+
+
+

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Moon, Sun } from "lucide-react";
-import logo from "../../assets/logo.jpeg";
+import logo from "../../assets/optimized/logo.jpg";
 
 const Navbar = ({ isDarkMode, onToggleTheme }) => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,6 +76,9 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
             <img
               src={logo}
               alt="IISL"
+              width="300"
+              height="300"
+              fetchPriority="high"
               className="h-14 w-auto object-contain"
             />
             <div className="hidden sm:block leading-tight">
@@ -181,7 +184,7 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               className="md:hidden"
               aria-label="Open menu"
             >
-              <span className="text-2xl">☰</span>
+              <span className="text-4xl">☰</span>
             </button>
           </div>
 
@@ -231,6 +234,10 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
           <img
             src={logo}
             alt="IISL"
+            width="300"
+            height="300"
+            loading="lazy"
+            decoding="async"
             className="h-12 w-auto object-contain"
           />
         </Link>
