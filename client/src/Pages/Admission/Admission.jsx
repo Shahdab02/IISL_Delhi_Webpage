@@ -145,28 +145,28 @@ const Admission = () => {
   return (
     <main className="bg-white text-slate-900 overflow-hidden">
       {/*Hero */}
-      <section className="relative min-h-155 flex items-center bg-[#1f1230] overflow-hidden">
+      <section className="relative min-h-155 flex items-center bg-[#071b38] overflow-hidden">
         {/* Background */}
         <div className="absolute inset-0">
-          <div className="absolute -top-40 -left-40 w-125 h-125 rounded-full bg-[#5a2d8f]/30 blur-3xl" />
+          <div className="absolute -top-40 -left-40 w-125 h-125 rounded-full bg-[#0B3D91]/30 blur-3xl" />
 
-          <div className="absolute top-20 -right-37.5 w-137.5 h-137.5 rounded-full bg-[#9b6ac2]/20 blur-3xl" />
+          <div className="absolute top-20 -right-37.5 w-137.5 h-137.5 rounded-full bg-[#4DA3FF]/20 blur-3xl" />
 
-          <div className="absolute -bottom-50 left-[35%] w-125 h-125 rounded-full bg-[#d9b3ff]/20 blur-3xl" />
+          <div className="absolute -bottom-50 left-[35%] w-125 h-125 rounded-full bg-[#4DA3FF]/20 blur-3xl" />
         </div>
 
         <div className="relative max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-24 w-full">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             {/* Hero Content */}
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-[#d9b3ff] text-sm font-semibold">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 text-[#4DA3FF] text-sm font-semibold">
                 <Sparkles size={16} />
                 Admissions Open
               </div>
 
               <h1 className="mt-7 text-4xl sm:text-5xl lg:text-6xl font-black leading-tight text-white">
                 Start Your
-                <span className="block bg-linear-to-r from-[#d9b3ff] via-[#b78add] to-[#9b6ac2] bg-clip-text text-transparent">
+                <span className="block bg-linear-to-r from-[#4DA3FF] via-[#0B3D91] to-[#4DA3FF] bg-clip-text text-transparent">
                   Learning Journey.
                 </span>
               </h1>
@@ -178,17 +178,17 @@ const Admission = () => {
 
               <div className="mt-7 flex flex-wrap gap-3">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-sm">
-                  <CheckCircle2 size={17} className="text-[#d9b3ff]" />
+                  <CheckCircle2 size={17} className="text-[#4DA3FF]" />
                   Practical Learning
                 </div>
 
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-sm">
-                  <CheckCircle2 size={17} className="text-[#d9b3ff]" />
+                  <CheckCircle2 size={17} className="text-[#4DA3FF]" />
                   Career Focus
                 </div>
 
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-sm">
-                  <CheckCircle2 size={17} className="text-[#d9b3ff]" />
+                  <CheckCircle2 size={17} className="text-[#4DA3FF]" />
                   Expert Guidance
                 </div>
               </div>
@@ -196,7 +196,7 @@ const Admission = () => {
               <div className="mt-9 flex flex-col sm:flex-row gap-4">
                 <a
                   href="#admission-form"
-                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#5a2d8f] hover:bg-[#4b2378] text-white font-bold transition shadow-xl shadow-[#5a2d8f]/20"
+                  className="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-[#0B3D91] hover:bg-[#093678] text-white font-bold transition shadow-xl shadow-[#0B3D91]/20"
                 >
                   Apply Now
                   <ArrowRight size={19} />
@@ -214,7 +214,7 @@ const Admission = () => {
 
             {/* Hero Admission Card */}
             <div className="relative">
-              <div className="absolute -inset-5 bg-[#5a2d8f]/20 blur-3xl rounded-full" />
+              <div className="absolute -inset-5 bg-[#0B3D91]/20 blur-3xl rounded-full" />
 
               <div className="relative rounded-3xl bg-white p-6 sm:p-8 shadow-2xl">
                 <div className="flex items-center justify-between gap-4">
@@ -228,7 +228,7 @@ const Admission = () => {
                     </h2>
                   </div>
 
-                  <div className="w-12 h-12 rounded-xl bg-[#f3edf9] text-[#5a2d8f] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-[#eff6ff] text-[#0B3D91] flex items-center justify-center">
                     <GraduationCap size={26} />
                   </div>
                 </div>
@@ -244,7 +244,7 @@ const Admission = () => {
                       key={number}
                       className="flex items-center gap-4 p-4 rounded-xl bg-slate-50"
                     >
-                      <div className="w-10 h-10 rounded-lg bg-[#5a2d8f] text-white flex items-center justify-center font-bold">
+                      <div className="w-10 h-10 rounded-lg bg-[#0B3D91] text-white flex items-center justify-center font-bold">
                         {number}
                       </div>
 
@@ -255,8 +255,8 @@ const Admission = () => {
                   ))}
                 </div>
 
-                <div className="mt-6 flex items-center gap-3 p-4 rounded-xl bg-[#f3edf9]">
-                  <MapPin className="text-[#5a2d8f] shrink-0" size={20} />
+                <div className="mt-6 flex items-center gap-3 p-4 rounded-xl bg-[#eff6ff]">
+                  <MapPin className="text-[#0B3D91] shrink-0" size={20} />
 
                   <div>
                     <p className="text-xs text-slate-500">Training Centre</p>
@@ -276,7 +276,7 @@ const Admission = () => {
       <section className="relative -mt-10 z-10 px-5">
         <div className="max-w-6xl mx-auto grid grid-cols-2 lg:grid-cols-4 bg-white rounded-2xl shadow-2xl border border-slate-100 overflow-hidden">
           <div className="p-7 text-center border-r border-slate-100">
-            <BookOpen className="mx-auto text-[#5a2d8f]" size={27} />
+            <BookOpen className="mx-auto text-[#0B3D91]" size={27} />
 
             <h3 className="mt-3 text-2xl font-black">20+</h3>
 
@@ -286,7 +286,7 @@ const Admission = () => {
           </div>
 
           <div className="p-7 text-center lg:border-r border-slate-100">
-            <Users className="mx-auto text-[#5a2d8f]" size={27} />
+            <Users className="mx-auto text-[#0B3D91]" size={27} />
 
             <h3 className="mt-3 text-2xl font-black">Small</h3>
 
@@ -294,7 +294,7 @@ const Admission = () => {
           </div>
 
           <div className="p-7 text-center border-r border-slate-100">
-            <Zap className="mx-auto text-[#5a2d8f]" size={27} />
+            <Zap className="mx-auto text-[#0B3D91]" size={27} />
 
             <h3 className="mt-3 text-2xl font-black">Practical</h3>
 
@@ -317,13 +317,13 @@ const Admission = () => {
         className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 py-28"
       >
         <div className="text-center max-w-3xl mx-auto">
-          <span className="text-[#5a2d8f] font-bold text-sm uppercase tracking-widest">
+          <span className="text-[#0B3D91] font-bold text-sm uppercase tracking-widest">
             Simple Admission Process
           </span>
 
           <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black">
             Your Journey Starts
-            <span className="text-[#5a2d8f]"> in 4 Steps</span>
+            <span className="text-[#0B3D91]"> in 4 Steps</span>
           </h2>
 
           <p className="mt-5 text-slate-600 leading-7">
@@ -339,10 +339,10 @@ const Admission = () => {
             return (
               <div
                 key={step.number}
-                className="relative group p-7 bg-white rounded-2xl border border-slate-100 hover:border-[#d9c6ec] hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+                className="relative group p-7 bg-white rounded-2xl border border-slate-100 hover:border-[#bfdbfe] hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
               >
                 <div className="flex justify-between items-start">
-                  <div className="w-14 h-14 rounded-2xl bg-[#f3edf9] text-[#5a2d8f] flex items-center justify-center group-hover:bg-[#5a2d8f] group-hover:text-white transition">
+                  <div className="w-14 h-14 rounded-2xl bg-[#eff6ff] text-[#0B3D91] flex items-center justify-center group-hover:bg-[#0B3D91] group-hover:text-white transition">
                     <Icon size={26} />
                   </div>
 
@@ -367,13 +367,13 @@ const Admission = () => {
         <div className="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <div>
-              <span className="text-[#5a2d8f] font-bold text-sm uppercase tracking-widest">
+              <span className="text-[#0B3D91] font-bold text-sm uppercase tracking-widest">
                 Why Start With Us?
               </span>
 
               <h2 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-black leading-tight">
                 More Than a Course.
-                <span className="block text-[#5a2d8f]">
+                <span className="block text-[#0B3D91]">
                   A Complete Learning Experience.
                 </span>
               </h2>
@@ -391,7 +391,7 @@ const Admission = () => {
                   >
                     <CheckCircle2
                       size={20}
-                      className="text-[#5a2d8f] shrink-0 mt-0.5"
+                      className="text-[#0B3D91] shrink-0 mt-0.5"
                     />
 
                     <span className="text-sm font-semibold text-slate-700">
@@ -403,11 +403,11 @@ const Admission = () => {
             </div>
 
             <div className="relative">
-              <div className="absolute -inset-5 bg-linear-to-r from-[#5a2d8f]/20 to-[#d9b3ff]/20 blur-3xl rounded-full" />
+              <div className="absolute -inset-5 bg-linear-to-r from-[#0B3D91]/20 to-[#4DA3FF]/20 blur-3xl rounded-full" />
 
-              <div className="relative bg-[#1f1230] rounded-3xl p-7 sm:p-9">
+              <div className="relative bg-[#071b38] rounded-3xl p-7 sm:p-9">
                 <div className="flex items-center gap-4">
-                  <div className="w-14 h-14 rounded-2xl bg-[#5a2d8f] flex items-center justify-center">
+                  <div className="w-14 h-14 rounded-2xl bg-[#0B3D91] flex items-center justify-center">
                     <ShieldCheck className="text-white" size={28} />
                   </div>
 
@@ -434,7 +434,7 @@ const Admission = () => {
                       key={item}
                       className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5"
                     >
-                      <div className="w-9 h-9 rounded-lg bg-[#5a2d8f]/35 text-[#d9b3ff] flex items-center justify-center font-bold">
+                      <div className="w-9 h-9 rounded-lg bg-[#0B3D91]/35 text-[#4DA3FF] flex items-center justify-center font-bold">
                         {index + 1}
                       </div>
 
@@ -458,13 +458,13 @@ const Admission = () => {
         <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-10 items-start">
           {/* LEFT INFO */}
           <div className="lg:sticky lg:top-24">
-            <span className="text-[#5a2d8f] font-bold text-sm uppercase tracking-widest">
+            <span className="text-[#0B3D91] font-bold text-sm uppercase tracking-widest">
               Admission Enquiry
             </span>
 
             <h2 className="mt-4 text-3xl sm:text-4xl font-black leading-tight">
               Ready to Start
-              <span className="block text-[#5a2d8f]">Your Journey?</span>
+              <span className="block text-[#0B3D91]">Your Journey?</span>
             </h2>
 
             <p className="mt-5 text-slate-600 leading-7">
@@ -474,7 +474,7 @@ const Admission = () => {
 
             <div className="mt-8 space-y-4">
               <div className="flex gap-4 p-4 rounded-2xl bg-slate-50">
-                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#eee5f7] text-[#5a2d8f] flex items-center justify-center">
+                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#dbeafe] text-[#0B3D91] flex items-center justify-center">
                   <MapPin size={21} />
                 </div>
 
@@ -492,7 +492,7 @@ const Admission = () => {
               </div>
 
               <div className="flex gap-4 p-4 rounded-2xl bg-slate-50">
-                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#eee5f7] text-[#5a2d8f] flex items-center justify-center">
+                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#dbeafe] text-[#0B3D91] flex items-center justify-center">
                   <Phone size={21} />
                 </div>
 
@@ -508,7 +508,7 @@ const Admission = () => {
               </div>
 
               <div className="flex gap-4 p-4 rounded-2xl bg-slate-50">
-                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#eee5f7] text-[#5a2d8f] flex items-center justify-center">
+                <div className="w-11 h-11 shrink-0 rounded-xl bg-[#dbeafe] text-[#0B3D91] flex items-center justify-center">
                   <Clock3 size={21} />
                 </div>
 
@@ -529,7 +529,7 @@ const Admission = () => {
           <div className="bg-white rounded-3xl border border-slate-200 shadow-xl p-6 sm:p-9">
             {submitted ? (
               <div className="min-h-125 flex flex-col items-center justify-center text-center">
-                <div className="w-20 h-20 rounded-full bg-[#f3edf9] text-[#5a2d8f] flex items-center justify-center">
+                <div className="w-20 h-20 rounded-full bg-[#eff6ff] text-[#0B3D91] flex items-center justify-center">
                   <CheckCircle2 size={42} />
                 </div>
 
@@ -542,7 +542,7 @@ const Admission = () => {
 
                 <button
                   onClick={() => setSubmitted(false)}
-                  className="mt-7 px-6 py-3 rounded-xl bg-[#5a2d8f] hover:bg-[#4b2378] text-white font-bold transition"
+                  className="mt-7 px-6 py-3 rounded-xl bg-[#0B3D91] hover:bg-[#093678] text-white font-bold transition"
                 >
                   Submit Another Enquiry
                 </button>
@@ -579,7 +579,7 @@ const Admission = () => {
                         onChange={handleChange}
                         required
                         placeholder="Enter your full name"
-                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                       />
                     </div>
                   </div>
@@ -603,7 +603,7 @@ const Admission = () => {
                         onChange={handleChange}
                         required
                         placeholder="Enter phone number"
-                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                       />
                     </div>
                   </div>
@@ -626,7 +626,7 @@ const Admission = () => {
                         value={formData.email}
                         onChange={handleChange}
                         placeholder="Enter email address"
-                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                        className="w-full pl-11 pr-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                       />
                     </div>
                   </div>
@@ -643,7 +643,7 @@ const Admission = () => {
                       value={formData.qualification}
                       onChange={handleChange}
                       placeholder="e.g. 12th, Graduate, Student"
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                      className="w-full px-4 py-3.5 rounded-xl border border-slate-200 outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                     />
                   </div>
 
@@ -664,7 +664,7 @@ const Admission = () => {
                         value={formData.course}
                         onChange={handleChange}
                         required
-                        className="appearance-none w-full pl-11 pr-10 py-3.5 rounded-xl border border-slate-200 bg-white outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                        className="appearance-none w-full pl-11 pr-10 py-3.5 rounded-xl border border-slate-200 bg-white outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                       >
                         <option value="">Select your course</option>
 
@@ -693,7 +693,7 @@ const Admission = () => {
                       value={formData.mode}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white outline-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                      className="w-full px-4 py-3.5 rounded-xl border border-slate-200 bg-white outline-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                     >
                       <option value="">Select mode</option>
 
@@ -718,7 +718,7 @@ const Admission = () => {
                     onChange={handleChange}
                     rows="4"
                     placeholder="Tell us about your learning goal..."
-                    className="w-full px-4 py-3.5 rounded-xl border border-slate-200 outline-none resize-none focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10 transition"
+                    className="w-full px-4 py-3.5 rounded-xl border border-slate-200 outline-none resize-none focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10 transition"
                   />
                 </div>
 
@@ -728,8 +728,8 @@ const Admission = () => {
                   disabled={loading}
                   className={`mt-6 w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl text-white font-bold transition shadow-lg ${
                     loading
-                      ? "bg-[#9b6ac2] cursor-not-allowed"
-                      : "bg-[#5a2d8f] hover:bg-[#4b2378] shadow-[#5a2d8f]/20"
+                      ? "bg-[#4DA3FF] cursor-not-allowed"
+                      : "bg-[#0B3D91] hover:bg-[#093678] shadow-[#0B3D91]/20"
                   }`}
                 >
                   {loading ? (
@@ -757,7 +757,7 @@ const Admission = () => {
 
       {/*  FINAL CTA */}
       <section className="px-5 pb-24">
-        <div className="max-w-6xl mx-auto rounded-3xl bg-linear-to-br from-[#5a2d8f] via-[#4b2378] to-[#1f1230] p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
+        <div className="brand-gradient max-w-6xl mx-auto rounded-3xl p-8 sm:p-12 lg:p-16 text-center relative overflow-hidden">
           <div className="absolute -top-24 -right-24 w-72 h-72 bg-white/10 rounded-full blur-3xl" />
 
           <div className="relative">
@@ -777,7 +777,7 @@ const Admission = () => {
 
             <a
               href="#admission-form"
-              className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-[#4b2378] hover:bg-slate-100 font-bold transition"
+              className="mt-8 inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-white text-[#093678] hover:bg-slate-100 font-bold transition"
             >
               Apply for Admission
               <ArrowRight size={19} />
@@ -802,7 +802,7 @@ const LaptopIcon = () => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="text-[#5a2d8f] mx-auto"
+      className="text-[#0B3D91] mx-auto"
     >
       <rect x="3" y="4" width="18" height="12" rx="2" />
 

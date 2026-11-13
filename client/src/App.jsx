@@ -52,9 +52,9 @@ const pageMetadata = {
       "View campus, classroom, workshop, and student moments from Indian Institute of Skills & Languages in Delhi.",
   },
   "/tech-service": {
-    title: "Website & SEO Services | IISL Delhi",
+    title: "Digital Marketing & Business Services | IISL Delhi",
     description:
-      "Explore website development and SEO services from IISL, alongside practical skills training in Delhi.",
+      "Explore website development, SEO, Google and Meta Ads, e-commerce, political campaign, and social media management services from IISL in Delhi.",
   },
 };
 
@@ -178,7 +178,7 @@ function AppContent() {
           rel="noreferrer"
           aria-label="Chat with IISL on WhatsApp"
           title="Chat with IISL on WhatsApp"
-          className="inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-amber-500 bg-yellow-400 text-xs font-bold text-slate-950 shadow-md transition hover:-translate-y-0.5 hover:bg-yellow-300 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-700 sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
+          className="inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-amber-500 bg-amber-500 text-xs font-bold text-slate-950 shadow-md transition hover:-translate-y-0.5 hover:bg-amber-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-700 sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
         >
           <MessageCircle size={17} aria-hidden="true" />
           <span className="sr-only sm:not-sr-only">WhatsApp</span>
@@ -187,7 +187,7 @@ function AppContent() {
           to="/contact"
           aria-label="Drop an enquiry"
           title="Drop an enquiry"
-          className="quick-enquiry-action inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-xs font-bold text-[#2d0d4d] shadow-md transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f] sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
+          className="quick-enquiry-action inline-flex h-11 w-11 items-center justify-center gap-2 rounded-full border border-slate-200 bg-white text-xs font-bold text-[#082657] shadow-md transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0B3D91] sm:h-9 sm:w-auto sm:justify-start sm:rounded-lg sm:px-2.5 sm:shadow-md"
         >
           <MessageSquareText size={17} aria-hidden="true" />
           <span className="sr-only sm:not-sr-only">Enquiry</span>

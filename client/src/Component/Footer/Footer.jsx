@@ -12,7 +12,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="mt-16 bg-[#1f1230] text-white">
+    <footer className="mt-16 bg-[#071b38] text-white">
       <div className="mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-12 lg:py-16">
         <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
@@ -30,7 +30,7 @@ const Footer = () => {
                 <h3 className="text-2xl font-black tracking-tight text-white">
                   IISL
                 </h3>
-                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#d9b3ff]">
+                <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#4DA3FF]">
                   Indian Institute of Skills & Languages
                 </p>
               </div>
@@ -46,11 +46,12 @@ const Footer = () => {
                   Quick Links
                 </h4>
                 <ul className="space-y-3 text-sm text-white/65">
-                  <li><Link to="/" className="transition-colors hover:text-[#d9b3ff]">Home</Link></li>
-                  <li><Link to="/about" className="transition-colors hover:text-[#d9b3ff]">About</Link></li>
-                  <li><Link to="/why-us" className="transition-colors hover:text-[#d9b3ff]">Why Us</Link></li>
-                  <li><Link to="/courses" className="transition-colors hover:text-[#d9b3ff]">Courses</Link></li>
-                  <li><Link to="/contact" className="transition-colors hover:text-[#d9b3ff]">Contact</Link></li>
+                  <li><Link to="/" className="transition-colors hover:text-[#4DA3FF]">Home</Link></li>
+                  <li><Link to="/about" className="transition-colors hover:text-[#4DA3FF]">About</Link></li>
+                  <li><Link to="/why-us" className="transition-colors hover:text-[#4DA3FF]">Why Us</Link></li>
+                  <li><Link to="/courses" className="transition-colors hover:text-[#4DA3FF]">Courses</Link></li>
+                  <li><Link to="/contact" className="transition-colors hover:text-[#4DA3FF]">Contact</Link></li>
+                  <li><a href="https://blog.iisldelhi.com/all-blogs/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#4DA3FF]">IISL Blog</a></li>
                 </ul>
               </div>
 
@@ -59,11 +60,11 @@ const Footer = () => {
                   Programs
                 </h4>
                 <ul className="space-y-3 text-sm text-white/65">
-                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Professional Courses</a></li>
-                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Career Guidance</a></li>
-                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Live Projects</a></li>
-                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Placement Support</a></li>
-                  <li><a href="#" className="transition-colors hover:text-[#d9b3ff]">Admission Help</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#4DA3FF]">Professional Courses</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#4DA3FF]">Career Guidance</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#4DA3FF]">Live Projects</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#4DA3FF]">Placement Support</a></li>
+                  <li><a href="#" className="transition-colors hover:text-[#4DA3FF]">Admission Help</a></li>
                 </ul>
               </div>
             </div>
@@ -73,7 +74,7 @@ const Footer = () => {
             <h4 className="text-lg font-bold text-white">Contact Us</h4>
             <div className="mt-6 grid gap-5 sm:grid-cols-2">
               <div className="flex items-start gap-3">
-                <MapPin size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <MapPin size={19} className="mt-0.5 shrink-0 text-[#4DA3FF]" />
                 <p className="text-sm leading-6 text-white/70">
                   Rohini Sector 23, Delhi
                   <br />
@@ -82,7 +83,7 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <Phone size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <Phone size={19} className="mt-0.5 shrink-0 text-[#4DA3FF]" />
                 <div className="space-y-1 text-sm text-white/70">
                   <a href="tel:+919310772538" className="block transition-colors hover:text-white">
                     +91-9310772538
@@ -94,7 +95,7 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <Mail size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <Mail size={19} className="mt-0.5 shrink-0 text-[#4DA3FF]" />
                 <a
                   href="mailto:iisldelhi@gmail.com"
                   className="break-all text-sm text-white/70 transition-colors hover:text-white"
@@ -104,7 +105,7 @@ const Footer = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <Clock3 size={19} className="mt-0.5 shrink-0 text-[#d9b3ff]" />
+                <Clock3 size={19} className="mt-0.5 shrink-0 text-[#4DA3FF]" />
                 <p className="text-sm leading-6 text-white/70">
                   Mon - Sat
                   <br />
@@ -123,7 +124,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="WhatsApp"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#4DA3FF] hover:text-white"
                 >
                   <MessageCircle
                     size={17}
@@ -137,7 +138,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Instagram"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#4DA3FF] hover:text-white"
                 >
                   <svg
                     aria-hidden="true"
@@ -170,7 +171,7 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Facebook"
-                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#d9b3ff] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-full border border-white/15 px-4 py-2 text-sm text-white/70 transition-colors hover:border-[#4DA3FF] hover:text-white"
                 >
                   <span aria-hidden="true" className="text-base font-black leading-none text-[#1877F2]">
                     f

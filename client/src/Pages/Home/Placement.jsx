@@ -40,7 +40,7 @@ const Placement = () => {
 				</div>
 
 				<div>
-					<p className="text-sm font-bold uppercase tracking-[0.14em] text-emerald-700">
+					<p className="text-sm font-bold uppercase tracking-[0.14em] text-amber-700">
 						Career support
 					</p>
 					<h2 className="mt-3 max-w-xl text-3xl font-black leading-tight sm:text-4xl">
@@ -55,7 +55,7 @@ const Placement = () => {
 					<div className="mt-8 divide-y divide-slate-200 border-y border-slate-200">
 						{supportAreas.map(({ icon: Icon, title, description }) => (
 							<div key={title} className="flex gap-4 py-4">
-								<span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-emerald-800">
+								<span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
 									<Icon size={21} aria-hidden="true" />
 								</span>
 								<div>
@@ -70,7 +70,7 @@ const Placement = () => {
 
 					<a
 						href="/contact"
-						className="mt-7 inline-flex items-center gap-2 rounded-lg bg-emerald-700 px-5 py-3 font-bold text-white transition hover:bg-emerald-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-700"
+						className="mt-7 inline-flex items-center gap-2 rounded-lg bg-amber-700 px-5 py-3 font-bold text-white transition hover:bg-amber-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-700"
 					>
 						Talk to our team
 						<ArrowUpRight size={18} aria-hidden="true" />

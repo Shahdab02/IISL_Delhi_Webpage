@@ -82,17 +82,17 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               className="h-14 w-auto object-contain"
             />
             <div className="hidden sm:block leading-tight">
-              <div className="navbar-brand-title text-[2rem] font-black tracking-tight text-[#2d0d4d]">
+              <div className="navbar-brand-title text-[2rem] font-black tracking-tight text-[#082657]">
                 IISL
               </div>
-              <div className="navbar-brand-caption text-[10px] uppercase tracking-[0.22em] text-[#5f4f71] font-semibold">
+              <div className="navbar-brand-caption text-[10px] uppercase tracking-[0.22em] text-[#356ba8] font-semibold">
                 Indian Institute of Skills &amp; Languages
               </div>
             </div>
           </Link>
 
           {/* ================= DESKTOP NAV ================= */}
-          <div className="hidden md:flex items-center justify-center flex-1 gap-7 lg:gap-9 text-[#2d0d4d]">
+          <div className="hidden md:flex items-center justify-center flex-1 gap-7 lg:gap-9 text-[#082657]">
 
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
@@ -108,8 +108,8 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
                     transition-all duration-300
                     ${
                       isActive
-                        ? "text-[#2d0d4d] font-semibold"
-                        : "text-[#2d0d4d]/80 hover:text-[#2d0d4d]"
+                        ? "text-[#082657] font-semibold"
+                        : "text-[#082657]/80 hover:text-[#082657]"
                     }
                   `}
                 >
@@ -121,7 +121,7 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
                       left-0
                       -bottom-2
                       h-0.5
-                      bg-[#2d0d4d]
+                      bg-[#082657]
                       transition-all duration-300
                       ${
                         isActive
@@ -133,6 +133,14 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
                 </Link>
               );
             })}
+            <a
+              href="https://blog.iisldelhi.com/all-blogs/"
+              target="_blank"
+              rel="noreferrer"
+              className="font-medium text-[15px] text-[#082657]/80 transition-all duration-300 hover:text-[#082657]"
+            >
+              Blog
+            </a>
 
           </div>
 
@@ -143,7 +151,7 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               onClick={onToggleTheme}
               aria-label={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
               title={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
-              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#2d0d4d] shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f]"
+              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#082657] shadow-sm transition hover:-translate-y-0.5 hover:bg-slate-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0B3D91]"
             >
               {isDarkMode ? <Sun size={19} /> : <Moon size={19} />}
             </button>
@@ -153,12 +161,12 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               className="
                 px-7 py-3
                 rounded-full
-                bg-[#5a2d8f]
+                bg-[#0B3D91]
                 text-white
                 text-sm
                 font-bold
                 shadow-md
-                hover:bg-[#4b2378]
+                hover:bg-[#093678]
                 hover:shadow-lg
                 transition-all duration-300
               "
@@ -175,7 +183,7 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
               onClick={onToggleTheme}
               aria-label={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
               title={`Switch to ${isDarkMode ? "light" : "dark"} mode`}
-              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#2d0d4d] shadow-sm transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5a2d8f]"
+              className="flex size-10 items-center justify-center rounded-full border border-slate-300 bg-white text-[#082657] shadow-sm transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0B3D91]"
             >
               {isDarkMode ? <Sun size={19} /> : <Moon size={19} />}
             </button>
@@ -266,6 +274,15 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
             </Link>
           );
         })}
+        <a
+          href="https://blog.iisldelhi.com/all-blogs/"
+          target="_blank"
+          rel="noreferrer"
+          onClick={() => setIsMenuOpen(false)}
+          className="text-lg font-semibold text-gray-800 transition-all hover:text-blue-600"
+        >
+          Blog
+        </a>
 
         {/* Mobile Admission Button */}
         <Link

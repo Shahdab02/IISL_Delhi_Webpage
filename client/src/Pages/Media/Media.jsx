@@ -58,7 +58,7 @@ const Media = () => {
 
   return (
     <div className="media-page bg-slate-50 text-slate-900">
-      <section className="media-hero relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950">
+      <section className="media-hero relative overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950">
         <div className="media-hero-glow absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(90,45,143,0.25),transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(217,179,255,0.20),transparent_30%)]" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
@@ -71,7 +71,7 @@ const Media = () => {
 
               <h1 className="text-4xl font-black leading-tight text-white sm:text-5xl lg:text-6xl">
                 Moments that
-                <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="block bg-gradient-to-r from-cyan-300 via-blue-400 to-blue-400 bg-clip-text text-transparent">
                   define our campus energy
                 </span>
               </h1>
@@ -258,7 +258,7 @@ const Media = () => {
       </section>
 
       <section className="px-5 pb-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-7xl rounded-[2rem] bg-gradient-to-r from-blue-600 via-indigo-600 to-violet-600 p-8 text-white shadow-2xl shadow-indigo-900/20 sm:p-12">
+        <div className="brand-gradient mx-auto max-w-7xl rounded-[2rem] p-8 text-white shadow-2xl shadow-blue-900/20 sm:p-12">
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">
               <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-blue-100">

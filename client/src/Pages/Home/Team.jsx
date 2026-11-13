@@ -17,7 +17,7 @@ import shahdab from "../../assets/optimized/shahdab.jpg";
 import simmi from "../../assets/optimized/simmi.jpg";
 import divya from "../../assets/optimized/divya.jpg";
 import lakshay from "../../assets/optimized/lakshay.jpg";
-import anushka from "../../assets/optimized/anushka.jpg";
+import anushka from "../../assets/anushka.png";
 
 const teamImageDimensions = {
   "Sumit Agarwal": { width: 600, height: 600 },
@@ -35,7 +35,7 @@ const Team = () => {
       role: "Founder & Director",
       icon: Target,
       image: sir,
-      color: "from-blue-600 to-indigo-800",
+      color: "from-[#0B3D91] to-[#4DA3FF]",
       message:
         "Building a learning ecosystem where students gain practical skills, confidence, and career direction.",
       skills: ["Leadership", "Career Strategy", "Training"],
@@ -45,7 +45,7 @@ const Team = () => {
       role: "Head of Marketing",
       icon: Megaphone,
       image: lakshay,
-      color: "from-purple-500 to-pink-700",
+      color: "from-[#0B3D91] to-[#4DA3FF]",
       message:
         "Connecting students with opportunities through strategic marketing, communication, and outreach.",
       skills: ["Marketing", "Branding", "Communication"],
@@ -65,7 +65,7 @@ const Team = () => {
       role: "Associate Head – Programs & Digital Marketing",
       icon: Sparkles,
       image: simmi,
-      color: "from-purple-500 to-purple-700",
+      color: "from-[#0B3D91] to-[#4DA3FF]",
       message:
         "Managing student programs and creating engaging digital initiatives that support learning and growth.",
       skills: ["Programs", "Digital Marketing", "Management"],
@@ -75,7 +75,7 @@ const Team = () => {
       role: "Head – Student Mentorship & Languages",
       icon: Languages,
       image: divya,
-      color: "from-emerald-500 to-teal-700",
+      color: "from-amber-500 to-orange-700",
       message:
         "Helping students improve communication, language skills, confidence, and overall professional development.",
       skills: ["Mentorship", "Languages", "Personality Development"],
@@ -148,7 +148,7 @@ const Team = () => {
       <section className="relative overflow-hidden bg-slate-950">
         <div className="absolute -left-20 top-10 h-72 w-72 rounded-full bg-blue-600/20 blur-3xl" />
 
-        <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-purple-600/20 blur-3xl" />
+        <div className="absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10 lg:py-28">
           <div className="max-w-4xl">
@@ -159,7 +159,7 @@ const Team = () => {
 
             <h1 className="text-4xl font-extrabold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
               The People
-              <span className="block bg-linear-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+              <span className="block bg-linear-to-r from-blue-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
                 Behind Your Career
               </span>
             </h1>
@@ -279,6 +279,11 @@ const Team = () => {
                           height={teamImageDimensions[member.name].height}
                           loading="lazy"
                           decoding="async"
+                          style={
+                            member.name === "Anushka"
+                              ? { objectPosition: "center 10%" }
+                              : undefined
+                          }
                           className="absolute inset-0 z-20 h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.01]"
                         />
 
@@ -345,7 +350,7 @@ const Team = () => {
 
                     {/* Student Success */}
                     <div className="mt-6 flex items-center gap-2 border-t border-slate-100 pt-5 text-xs font-semibold text-slate-500">
-                      <CheckCircle2 size={16} className="text-emerald-500" />
+                      <CheckCircle2 size={16} className="text-amber-500" />
                       Dedicated to Student Success
                     </div>
                   </div>

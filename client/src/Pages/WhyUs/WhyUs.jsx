@@ -161,10 +161,10 @@ const WhyUs = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden bg-linear-to-br from-indigo-950 via-indigo-900 to-purple-900 text-white">
+      <section className="relative overflow-hidden bg-linear-to-br from-blue-950 via-blue-900 to-blue-900 text-white">
         {/* Background Decorations */}
-        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-purple-500/20 blur-3xl" />
-        <div className="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-indigo-400/20 blur-3xl" />
+        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-blue-500/20 blur-3xl" />
+        <div className="absolute -bottom-32 -left-20 h-80 w-80 rounded-full bg-blue-400/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
           <div className="grid items-center gap-12 lg:grid-cols-2">
@@ -177,10 +177,10 @@ const WhyUs = () => {
 
               <h1 className="max-w-3xl text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
                 Learn Today.
-                <span className="block text-indigo-300">Grow Tomorrow.</span>
+                <span className="block text-blue-300">Grow Tomorrow.</span>
               </h1>
 
-              <p className="mt-6 max-w-2xl text-base leading-7 text-indigo-100 sm:text-lg">
+              <p className="mt-6 max-w-2xl text-base leading-7 text-blue-100 sm:text-lg">
                 Indian Institute of Skills & Language focuses on practical
                 education, relevant technology skills and student-focused
                 guidance to help learners build confidence and prepare for their
@@ -190,7 +190,7 @@ const WhyUs = () => {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="/courses"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-indigo-900 shadow-xl transition hover:-translate-y-1 hover:bg-indigo-50"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-blue-900 shadow-xl transition hover:-translate-y-1 hover:bg-blue-50"
                 >
                   Explore Courses
                   <Rocket size={18} />
@@ -215,7 +215,7 @@ const WhyUs = () => {
                   </div>
 
                   <div>
-                    <p className="text-sm text-indigo-200">
+                    <p className="text-sm text-blue-200">
                       Indian Institute of
                     </p>
                     <h3 className="font-bold">Skills & Language</h3>
@@ -231,11 +231,11 @@ const WhyUs = () => {
                         key={index}
                         className="rounded-2xl border border-white/10 bg-white/10 p-4"
                       >
-                        <Icon size={21} className="mb-3 text-indigo-200" />
+                        <Icon size={21} className="mb-3 text-blue-200" />
 
                         <h4 className="text-2xl font-black">{stat.number}</h4>
 
-                        <p className="mt-1 text-xs text-indigo-100 sm:text-sm">
+                        <p className="mt-1 text-xs text-blue-100 sm:text-sm">
                           {stat.label}
                         </p>
                       </div>
@@ -259,7 +259,7 @@ const WhyUs = () => {
                 key={index}
                 className="why-us-stat-card border-b border-slate-100 p-5 text-center transition hover:bg-slate-50 md:border-b-0 md:border-r last:border-r-0"
               >
-                <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+                <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
                   <Icon size={21} />
                 </div>
 
@@ -281,13 +281,13 @@ const WhyUs = () => {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           {/* Left */}
           <div>
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               Why IISL?
             </span>
 
             <h2 className="mt-5 text-3xl font-black leading-tight text-slate-900 sm:text-4xl">
               Education That Focuses on
-              <span className="text-indigo-600"> Skills & Growth</span>
+              <span className="text-blue-600"> Skills & Growth</span>
             </h2>
 
             <p className="mt-5 leading-8 text-slate-600">
@@ -312,7 +312,7 @@ const WhyUs = () => {
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle2
                     size={20}
-                    className="shrink-0 text-emerald-500"
+                    className="shrink-0 text-amber-500"
                   />
                   <span className="font-medium text-slate-700">{item}</span>
                 </div>
@@ -322,9 +322,9 @@ const WhyUs = () => {
 
           {/* Right */}
           <div className="relative">
-            <div className="rounded-3xl bg-linear-to-br from-indigo-600 to-purple-700 p-1 shadow-2xl">
+            <div className="brand-gradient rounded-3xl p-1 shadow-2xl">
               <div className="rounded-[22px] bg-white p-7 sm:p-9">
-                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+                <div className="mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
                   <Award size={28} />
                 </div>
 
@@ -340,14 +340,14 @@ const WhyUs = () => {
 
                 <div className="mt-7 grid grid-cols-2 gap-4">
                   <div className="rounded-2xl bg-slate-50 p-4">
-                    <ShieldCheck className="text-indigo-600" size={22} />
+                    <ShieldCheck className="text-blue-600" size={22} />
                     <p className="mt-3 text-sm font-bold">
                       Supportive Environment
                     </p>
                   </div>
 
                   <div className="rounded-2xl bg-slate-50 p-4">
-                    <Clock3 className="text-indigo-600" size={22} />
+                    <Clock3 className="text-blue-600" size={22} />
                     <p className="mt-3 text-sm font-bold">
                       Structured Learning
                     </p>
@@ -362,9 +362,9 @@ const WhyUs = () => {
       {/* ================= FREE TRANSPORTATION ================= */}
       <section className="px-5 pb-10 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
-          <div className="relative overflow-hidden rounded-3xl bg-linear-to-r from-indigo-600 via-purple-600 to-indigo-700 p-6 text-white shadow-2xl shadow-indigo-500/20 sm:p-8 lg:p-10">
+          <div className="brand-gradient relative overflow-hidden rounded-3xl p-6 text-white shadow-2xl shadow-blue-500/20 sm:p-8 lg:p-10">
             <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-white/10 blur-2xl" />
-            <div className="absolute -bottom-20 -left-10 h-48 w-48 rounded-full bg-purple-300/10 blur-2xl" />
+            <div className="absolute -bottom-20 -left-10 h-48 w-48 rounded-full bg-blue-300/10 blur-2xl" />
 
             <div className="relative flex flex-col items-start gap-6 md:flex-row md:items-center md:justify-between">
               <div className="flex items-start gap-4 sm:gap-5">
@@ -376,7 +376,7 @@ const WhyUs = () => {
                   <div className="mb-2 flex items-center gap-2">
                     <Sparkles size={16} className="text-yellow-300" />
 
-                    <span className="text-xs font-bold uppercase tracking-wider text-indigo-100 sm:text-sm">
+                    <span className="text-xs font-bold uppercase tracking-wider text-blue-100 sm:text-sm">
                       Special Student Facility
                     </span>
                   </div>
@@ -385,7 +385,7 @@ const WhyUs = () => {
                     Free Student Transportation
                   </h3>
 
-                  <p className="mt-2 max-w-2xl text-sm leading-6 text-indigo-100 sm:text-base">
+                  <p className="mt-2 max-w-2xl text-sm leading-6 text-blue-100 sm:text-base">
                     Convenient transportation support for eligible students,
                     making it easier and more comfortable to attend classes.
                   </p>
@@ -393,7 +393,7 @@ const WhyUs = () => {
               </div>
 
               <div className="shrink-0 rounded-2xl bg-white/10 px-5 py-3 text-center backdrop-blur-md">
-                <p className="text-xs font-semibold uppercase tracking-wider text-indigo-100">
+                <p className="text-xs font-semibold uppercase tracking-wider text-blue-100">
                   Student Benefit
                 </p>
                 <p className="mt-1 font-black text-white">FREE TRANSPORT</p>
@@ -407,13 +407,13 @@ const WhyUs = () => {
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               Our Highlights
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Everything Students Need to
-              <span className="text-indigo-600"> Keep Growing</span>
+              <span className="text-blue-600"> Keep Growing</span>
             </h2>
 
             <p className="mt-4 leading-7 text-slate-600">
@@ -431,7 +431,7 @@ const WhyUs = () => {
                   key={index}
                   className="why-us-feature-card group rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl hover:shadow-slate-200/70"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-100 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
                     <Icon size={23} />
                   </div>
 
@@ -454,13 +454,13 @@ const WhyUs = () => {
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           {/* Left */}
           <div>
-            <span className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-indigo-700 shadow-sm">
+            <span className="inline-flex rounded-full bg-white px-4 py-2 text-sm font-bold text-blue-700 shadow-sm">
               Student Benefits
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               A Learning Environment Designed for
-              <span className="text-indigo-600"> Students</span>
+              <span className="text-blue-600"> Students</span>
             </h2>
 
             <p className="mt-5 leading-7 text-slate-600">
@@ -474,7 +474,7 @@ const WhyUs = () => {
                   key={index}
                   className={`rounded-2xl border p-4 text-sm font-semibold transition hover:-translate-y-1 hover:shadow-md ${
                     index === 0
-                      ? "border-indigo-200 bg-indigo-600 text-white shadow-lg shadow-indigo-500/20"
+                      ? "border-blue-200 bg-blue-600 text-white shadow-lg shadow-blue-500/20"
                       : "border-slate-200 bg-white text-slate-700"
                   }`}
                 >
@@ -487,7 +487,7 @@ const WhyUs = () => {
           {/* Right */}
           <div className="rounded-3xl bg-white p-6 shadow-xl shadow-slate-200/60 sm:p-8">
             <div className="mb-6 flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
                 <Target size={25} />
               </div>
 
@@ -508,7 +508,7 @@ const WhyUs = () => {
                     key={index}
                     className="flex items-center gap-4 rounded-2xl bg-slate-50 p-4"
                   >
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-indigo-600 shadow-sm">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white text-blue-600 shadow-sm">
                       <Icon size={21} />
                     </div>
 
@@ -531,13 +531,13 @@ const WhyUs = () => {
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               Learning Journey
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Learn. Practice. Build.
-              <span className="text-indigo-600"> Grow.</span>
+              <span className="text-blue-600"> Grow.</span>
             </h2>
 
             <p className="mt-4 leading-7 text-slate-600">
@@ -556,11 +556,11 @@ const WhyUs = () => {
                   className="why-us-journey-card relative rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="text-4xl font-black text-indigo-100">
+                    <span className="text-4xl font-black text-blue-100">
                       {step.number}
                     </span>
 
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-600 text-white">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-600 text-white">
                       <Icon size={23} />
                     </div>
                   </div>
@@ -581,13 +581,13 @@ const WhyUs = () => {
       <section className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           <div>
-            <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-bold text-indigo-200">
+            <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-bold text-blue-200">
               Student Environment
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Learn in a
-              <span className="text-indigo-300"> Supportive Environment</span>
+              <span className="text-blue-300"> Supportive Environment</span>
             </h2>
 
             <p className="mt-5 max-w-2xl leading-8 text-slate-300">
@@ -606,7 +606,7 @@ const WhyUs = () => {
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle2
                     size={20}
-                    className="shrink-0 text-emerald-400"
+                    className="shrink-0 text-amber-400"
                   />
 
                   <span className="text-sm font-medium text-slate-200 sm:text-base">
@@ -619,7 +619,7 @@ const WhyUs = () => {
 
           <div className="grid grid-cols-2 gap-4">
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-              <Laptop className="text-indigo-300" size={28} />
+              <Laptop className="text-blue-300" size={28} />
               <h3 className="mt-5 text-xl font-black">Practical</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Learn by doing and practicing.
@@ -627,7 +627,7 @@ const WhyUs = () => {
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-              <Users className="text-indigo-300" size={28} />
+              <Users className="text-blue-300" size={28} />
               <h3 className="mt-5 text-xl font-black">Support</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Get guidance whenever needed.
@@ -635,7 +635,7 @@ const WhyUs = () => {
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-              <Code2 className="text-indigo-300" size={28} />
+              <Code2 className="text-blue-300" size={28} />
               <h3 className="mt-5 text-xl font-black">Projects</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Apply your skills practically.
@@ -643,7 +643,7 @@ const WhyUs = () => {
             </div>
 
             <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md">
-              <Rocket className="text-indigo-300" size={28} />
+              <Rocket className="text-blue-300" size={28} />
               <h3 className="mt-5 text-xl font-black">Growth</h3>
               <p className="mt-2 text-sm leading-6 text-slate-400">
                 Keep learning and improving.
@@ -655,7 +655,7 @@ const WhyUs = () => {
 
       {/* ================= CTA ================= */}
       <section className="px-5 py-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-linear-to-r from-indigo-600 to-purple-700 p-8 text-center text-white shadow-2xl shadow-indigo-500/20 sm:p-12 lg:p-16">
+        <div className="brand-gradient mx-auto max-w-6xl overflow-hidden rounded-3xl p-8 text-center text-white shadow-2xl shadow-blue-500/20 sm:p-12 lg:p-16">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15">
             <Rocket size={30} />
           </div>
@@ -664,7 +664,7 @@ const WhyUs = () => {
             Ready to Build Your Skills?
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl leading-7 text-indigo-100">
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-blue-100">
             Start your learning journey with Indian Institute of Skills &
             Language and take the next step towards your goals.
           </p>
@@ -672,7 +672,7 @@ const WhyUs = () => {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="/courses"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-indigo-700 transition hover:-translate-y-1 hover:bg-indigo-50"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-blue-700 transition hover:-translate-y-1 hover:bg-blue-50"
             >
               View All Courses
               <BookOpen size={18} />

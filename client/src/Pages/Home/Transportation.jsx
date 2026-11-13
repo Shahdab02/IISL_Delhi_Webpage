@@ -69,10 +69,10 @@ const Transportation = () => {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900">
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden bg-linear-to-br from-indigo-950 via-indigo-900 to-purple-900 text-white">
+      <section className="relative overflow-hidden bg-linear-to-br from-blue-950 via-blue-900 to-blue-900 text-white">
         {/* Background Decorations */}
-        <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl" />
-        <div className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-purple-500/20 blur-3xl" />
+        <div className="absolute -left-24 -top-24 h-80 w-80 rounded-full bg-blue-500/20 blur-3xl" />
+        <div className="absolute -bottom-32 -right-24 h-96 w-96 rounded-full bg-blue-500/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
           <div className="grid items-center gap-14 lg:grid-cols-2">
@@ -85,10 +85,10 @@ const Transportation = () => {
 
               <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
                 Free Student
-                <span className="block text-indigo-300">Transportation</span>
+                <span className="block text-blue-300">Transportation</span>
               </h1>
 
-              <p className="mt-6 max-w-xl text-base leading-8 text-indigo-100 sm:text-lg">
+              <p className="mt-6 max-w-xl text-base leading-8 text-blue-100 sm:text-lg">
                 Indian Institute of Skills & Language provides transportation
                 support for eligible students on available routes, helping make
                 the journey to class easier and more convenient.
@@ -97,7 +97,7 @@ const Transportation = () => {
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <a
                   href="/contact"
-                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-indigo-900 shadow-xl transition hover:-translate-y-1 hover:bg-indigo-50"
+                  className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 font-bold text-blue-900 shadow-xl transition hover:-translate-y-1 hover:bg-blue-50"
                 >
                   Check Your Route
                   <MapPin size={18} />
@@ -121,7 +121,7 @@ const Transportation = () => {
                     <BusFront size={52} />
                   </div>
 
-                  <p className="mt-6 text-sm font-bold uppercase tracking-wider text-indigo-200">
+                  <p className="mt-6 text-sm font-bold uppercase tracking-wider text-blue-200">
                     Student Benefit
                   </p>
 
@@ -129,19 +129,19 @@ const Transportation = () => {
                     FREE TRANSPORT
                   </h2>
 
-                  <p className="mt-3 max-w-sm text-sm leading-6 text-indigo-100">
+                  <p className="mt-3 max-w-sm text-sm leading-6 text-blue-100">
                     Convenient transportation support for eligible students and
                     available routes.
                   </p>
 
                   <div className="mt-7 grid w-full grid-cols-2 gap-3">
                     <div className="rounded-2xl bg-white/10 p-4">
-                      <MapPin size={23} className="mx-auto text-indigo-200" />
+                      <MapPin size={23} className="mx-auto text-blue-200" />
                       <p className="mt-2 text-sm font-bold">Route Based</p>
                     </div>
 
                     <div className="rounded-2xl bg-white/10 p-4">
-                      <Users size={23} className="mx-auto text-indigo-200" />
+                      <Users size={23} className="mx-auto text-blue-200" />
                       <p className="mt-2 text-sm font-bold">Student Focused</p>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ const Transportation = () => {
       <section className="relative -mt-8 px-5 sm:px-8">
         <div className="mx-auto grid max-w-6xl overflow-hidden rounded-3xl bg-white shadow-xl shadow-slate-200/70 sm:grid-cols-3">
           <div className="flex items-center gap-4 border-b border-slate-100 p-5 sm:border-b-0 sm:border-r">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
               <BusFront size={23} />
             </div>
 
@@ -169,7 +169,7 @@ const Transportation = () => {
           </div>
 
           <div className="flex items-center gap-4 border-b border-slate-100 p-5 sm:border-b-0 sm:border-r">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
               <Route size={23} />
             </div>
 
@@ -182,7 +182,7 @@ const Transportation = () => {
           </div>
 
           <div className="flex items-center gap-4 p-5">
-            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
               <MapPin size={23} />
             </div>
 
@@ -200,13 +200,13 @@ const Transportation = () => {
       <section className="px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               Transportation Benefits
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Making Your Learning Journey
-              <span className="text-indigo-600"> Easier</span>
+              <span className="text-blue-600"> Easier</span>
             </h2>
 
             <p className="mt-4 leading-7 text-slate-600">
@@ -225,7 +225,7 @@ const Transportation = () => {
                   key={index}
                   className="group rounded-3xl border border-slate-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:shadow-xl"
                 >
-                  <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition group-hover:bg-indigo-600 group-hover:text-white">
+                  <div className="flex h-13 w-13 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
                     <Icon size={24} />
                   </div>
 
@@ -245,13 +245,13 @@ const Transportation = () => {
       <section className="bg-white px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               How It Works
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Get Transportation Support in
-              <span className="text-indigo-600"> 4 Simple Steps</span>
+              <span className="text-blue-600"> 4 Simple Steps</span>
             </h2>
           </div>
 
@@ -262,11 +262,11 @@ const Transportation = () => {
                 className="transport-step-card rounded-3xl border border-slate-100 bg-slate-50 p-6 transition duration-300 hover:-translate-y-2 hover:bg-white hover:shadow-xl"
               >
                 <div className="flex items-center justify-between">
-                  <span className="text-4xl font-black text-indigo-100">
+                  <span className="text-4xl font-black text-blue-100">
                     {step.number}
                   </span>
 
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-600 text-white">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-white">
                     <CheckCircle2 size={21} />
                   </div>
                 </div>
@@ -286,13 +286,13 @@ const Transportation = () => {
       <section className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl items-center gap-12 lg:grid-cols-2">
           <div>
-            <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-bold text-indigo-200">
+            <span className="inline-flex rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-bold text-blue-200">
               Route Information
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Check Transportation
-              <span className="text-indigo-300"> Availability</span>
+              <span className="text-blue-300"> Availability</span>
             </h2>
 
             <p className="mt-5 leading-8 text-slate-300">
@@ -311,7 +311,7 @@ const Transportation = () => {
                 <div key={index} className="flex items-center gap-3">
                   <CheckCircle2
                     size={20}
-                    className="shrink-0 text-emerald-400"
+                    className="shrink-0 text-amber-400"
                   />
 
                   <span className="text-sm font-medium text-slate-200 sm:text-base">
@@ -324,7 +324,7 @@ const Transportation = () => {
 
           {/* Location Card */}
           <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-md sm:p-8">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-500/20 text-indigo-300">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-500/20 text-blue-300">
               <MapPin size={28} />
             </div>
 
@@ -340,7 +340,7 @@ const Transportation = () => {
 
             <a
               href="/contact"
-              className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-bold text-indigo-900 transition hover:bg-indigo-50"
+              className="mt-7 inline-flex items-center gap-2 rounded-xl bg-white px-5 py-3 font-bold text-blue-900 transition hover:bg-blue-50"
             >
               Contact for Route Details
               <MessageCircle size={18} />
@@ -353,13 +353,13 @@ const Transportation = () => {
       <section className="px-5 py-20 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-4xl">
           <div className="text-center">
-            <span className="inline-flex rounded-full bg-indigo-50 px-4 py-2 text-sm font-bold text-indigo-700">
+            <span className="inline-flex rounded-full bg-blue-50 px-4 py-2 text-sm font-bold text-blue-700">
               Frequently Asked
             </span>
 
             <h2 className="mt-5 text-3xl font-black sm:text-4xl">
               Transportation
-              <span className="text-indigo-600"> FAQs</span>
+              <span className="text-blue-600"> FAQs</span>
             </h2>
           </div>
 
@@ -404,7 +404,7 @@ const Transportation = () => {
 
       {/* CTA */}
       <section className="px-5 pb-20 sm:px-8 lg:px-12">
-        <div className="mx-auto max-w-6xl overflow-hidden rounded-3xl bg-linear-to-r from-indigo-600 to-purple-700 p-8 text-center text-white shadow-2xl shadow-indigo-500/20 sm:p-12 lg:p-16">
+        <div className="brand-gradient mx-auto max-w-6xl overflow-hidden rounded-3xl p-8 text-center text-white shadow-2xl shadow-blue-500/20 sm:p-12 lg:p-16">
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-white/15">
             <BusFront size={30} />
           </div>
@@ -413,7 +413,7 @@ const Transportation = () => {
             Want to Check Your Transportation Route?
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl leading-7 text-indigo-100">
+          <p className="mx-auto mt-4 max-w-2xl leading-7 text-blue-100">
             Contact Indian Institute of Skills & Language and check whether
             transportation support is available from your location.
           </p>
@@ -421,7 +421,7 @@ const Transportation = () => {
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <a
               href="/contact"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-indigo-700 transition hover:-translate-y-1 hover:bg-indigo-50"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-blue-700 transition hover:-translate-y-1 hover:bg-blue-50"
             >
               Check My Route
               <MapPin size={18} />

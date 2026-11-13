@@ -53,15 +53,15 @@ const Topbar = () => {
   );
 
   return (
-    <div className="relative isolate w-full overflow-hidden border-b border-white/10 bg-[#2d0d4d] text-white">
+    <div className="relative isolate w-full overflow-hidden border-b border-white/10 bg-[#082657] text-white">
       {/* Background Glow */}
       <span
-        className="pointer-events-none absolute left-[-5%] top-1/2 h-20 w-40 -translate-y-1/2 rounded-full bg-fuchsia-500/20 blur-3xl"
+        className="pointer-events-none absolute left-[-5%] top-1/2 h-20 w-40 -translate-y-1/2 rounded-full bg-blue-500/20 blur-3xl"
         aria-hidden="true"
       />
 
       <span
-        className="pointer-events-none absolute right-[-5%] top-1/2 h-20 w-40 -translate-y-1/2 rounded-full bg-purple-500/20 blur-3xl"
+        className="pointer-events-none absolute right-[-5%] top-1/2 h-20 w-40 -translate-y-1/2 rounded-full bg-blue-500/20 blur-3xl"
         aria-hidden="true"
       />
 

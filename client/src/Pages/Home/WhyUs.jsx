@@ -27,7 +27,7 @@ const reasons = [
     description:
       "Build real-world confidence through hands-on computer training, practical assignments, and industry-focused projects.",
     tag: "Practical Learning",
-    color: "emerald",
+    color: "amber",
   },
   {
     icon: Users,
@@ -45,7 +45,7 @@ const reasons = [
     description:
       "Develop in-demand technical, digital, and communication skills designed to prepare you for today's competitive world.",
     tag: "Skill Development",
-    color: "violet",
+    color: "blue",
   },
   {
     icon: BriefcaseBusiness,
@@ -59,11 +59,9 @@ const reasons = [
 ];
 
 const iconStyles = {
-  emerald:
-    "bg-emerald-50 text-emerald-600 group-hover:bg-emerald-600",
+  amber:
+    "bg-amber-50 text-amber-600 group-hover:bg-amber-600",
   blue: "bg-blue-50 text-blue-600 group-hover:bg-blue-600",
-  violet:
-    "bg-violet-50 text-violet-600 group-hover:bg-violet-600",
   orange:
     "bg-orange-50 text-orange-600 group-hover:bg-orange-600",
 };
@@ -102,7 +100,7 @@ const WhyUs = () => {
       {/* Animated background decorations */}
       <motion.div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-32 top-0 -z-10 h-96 w-96 rounded-full bg-emerald-200/40 blur-3xl"
+        className="pointer-events-none absolute -right-32 top-0 -z-10 h-96 w-96 rounded-full bg-amber-200/40 blur-3xl"
         animate={
           shouldReduceMotion
             ? {}
@@ -154,7 +152,7 @@ const WhyUs = () => {
                   : { opacity: 0, scale: 0.85 }
               }
               transition={{ duration: 0.6, ease }}
-              className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur"
+              className="mb-5 inline-flex items-center gap-2 rounded-full border border-amber-200 bg-white/80 px-4 py-2 shadow-sm backdrop-blur"
             >
               <motion.span
                 animate={shouldReduceMotion ? {} : { rotate: [0, 12, -12, 0] }}
@@ -164,10 +162,10 @@ const WhyUs = () => {
                   repeatDelay: 1,
                 }}
               >
-                <Sparkles size={15} className="text-emerald-600" />
+                <Sparkles size={15} className="text-amber-600" />
               </motion.span>
 
-              <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-emerald-700">
+              <span className="text-xs font-extrabold uppercase tracking-[0.16em] text-amber-700">
                 Why Choose IISL
               </span>
             </motion.div>
@@ -176,7 +174,7 @@ const WhyUs = () => {
               Your Ambition.
               <br />
               <motion.span
-                className="inline-block bg-gradient-to-r from-emerald-600 via-teal-500 to-emerald-600 bg-clip-text text-transparent"
+                className="inline-block bg-gradient-to-r from-amber-600 via-orange-500 to-amber-600 bg-clip-text text-transparent"
                 style={{ backgroundSize: "200% auto" }}
                 animate={
                   shouldReduceMotion
@@ -208,10 +206,10 @@ const WhyUs = () => {
             animate={isInView ? "visible" : "hidden"}
             whileHover={shouldReduceMotion ? {} : { y: -4, scale: 1.02 }}
             whileTap={{ scale: 0.97 }}
-            className="group inline-flex w-fit items-center gap-3 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 shadow-sm transition-colors duration-300 hover:border-emerald-500 hover:text-emerald-700 hover:shadow-lg"
+            className="group inline-flex w-fit items-center gap-3 rounded-full border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-900 shadow-sm transition-colors duration-300 hover:border-amber-500 hover:text-amber-700 hover:shadow-lg"
           >
             Explore Why IISL
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-50 text-emerald-700 transition-colors duration-300 group-hover:bg-emerald-600 group-hover:text-white">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-amber-50 text-amber-700 transition-colors duration-300 group-hover:bg-amber-600 group-hover:text-white">
               <ArrowUpRight size={17} />
             </span>
           </motion.a>
@@ -248,15 +246,15 @@ const WhyUs = () => {
                         transition: { duration: 0.25 },
                       }
                 }
-                className="group relative isolate overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-7 shadow-[0_4px_25px_rgba(15,23,42,0.035)] transition-[border-color,box-shadow] duration-300 hover:border-emerald-300 hover:shadow-[0_22px_55px_rgba(15,23,42,0.10)] sm:p-9"
+                className="group relative isolate overflow-hidden rounded-3xl border border-slate-200/80 bg-white p-7 shadow-[0_4px_25px_rgba(15,23,42,0.035)] transition-[border-color,box-shadow] duration-300 hover:border-amber-300 hover:shadow-[0_22px_55px_rgba(15,23,42,0.10)] sm:p-9"
               >
                 {/* Hover glow */}
-                <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-emerald-50/80 via-white to-teal-50/60 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+                <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-br from-amber-50/80 via-white to-orange-50/60 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
                 {/* Animated corner accent */}
                 <motion.div
                   aria-hidden="true"
-                  className="pointer-events-none absolute -right-12 -top-12 -z-10 h-32 w-32 rounded-full bg-emerald-200/30 blur-2xl"
+                  className="pointer-events-none absolute -right-12 -top-12 -z-10 h-32 w-32 rounded-full bg-amber-200/30 blur-2xl"
                   animate={
                     shouldReduceMotion
                       ? {}
@@ -284,12 +282,12 @@ const WhyUs = () => {
                       <Icon size={29} strokeWidth={1.8} />
                     </motion.div>
 
-                    <span className="text-5xl font-black tracking-tight text-slate-100 transition-colors duration-300 group-hover:text-emerald-100">
+                    <span className="text-5xl font-black tracking-tight text-slate-100 transition-colors duration-300 group-hover:text-amber-100">
                       {number}
                     </span>
                   </div>
 
-                  <h3 className="mb-3 text-xl font-extrabold tracking-tight text-slate-900 transition-colors duration-300 group-hover:text-emerald-800 sm:text-2xl">
+                  <h3 className="mb-3 text-xl font-extrabold tracking-tight text-slate-900 transition-colors duration-300 group-hover:text-amber-800 sm:text-2xl">
                     {title}
                   </h3>
 
@@ -298,17 +296,17 @@ const WhyUs = () => {
                   </p>
 
                   <div className="mt-7 flex items-center justify-between border-t border-slate-100 pt-5">
-                    <span className="inline-flex items-center gap-2 rounded-full bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors duration-300 group-hover:bg-emerald-50">
+                    <span className="inline-flex items-center gap-2 rounded-full bg-slate-50 px-3 py-1.5 text-xs font-semibold text-slate-600 transition-colors duration-300 group-hover:bg-amber-50">
                       <CheckCircle2
                         size={14}
-                        className="text-emerald-600"
+                        className="text-amber-600"
                       />
                       {tag}
                     </span>
 
                     <motion.div
                       whileHover={shouldReduceMotion ? {} : { rotate: 45 }}
-                      className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition-colors duration-300 group-hover:border-emerald-600 group-hover:bg-emerald-600 group-hover:text-white"
+                      className="flex h-9 w-9 items-center justify-center rounded-full border border-slate-200 text-slate-400 transition-colors duration-300 group-hover:border-amber-600 group-hover:bg-amber-600 group-hover:text-white"
                     >
                       <ArrowUpRight size={18} />
                     </motion.div>
@@ -350,7 +348,7 @@ const WhyUs = () => {
 
           <motion.div
             aria-hidden="true"
-            className="pointer-events-none absolute -bottom-24 right-20 -z-10 h-56 w-56 rounded-full bg-emerald-500/20 blur-3xl"
+            className="pointer-events-none absolute -bottom-24 right-20 -z-10 h-56 w-56 rounded-full bg-amber-500/20 blur-3xl"
             animate={
               shouldReduceMotion
                 ? {}
@@ -365,7 +363,7 @@ const WhyUs = () => {
 
           <div className="relative z-10 flex flex-col items-start justify-between gap-8 lg:flex-row lg:items-center">
             <div className="max-w-2xl">
-              <div className="mb-4 flex items-center gap-2 text-emerald-300">
+              <div className="mb-4 flex items-center gap-2 text-amber-300">
                 <GraduationCap size={19} />
                 <span className="text-xs font-bold uppercase tracking-[0.15em]">
                   Your Future Starts Here
@@ -374,7 +372,7 @@ const WhyUs = () => {
 
               <h3 className="text-2xl font-extrabold leading-tight sm:text-3xl">
                 Learn Skills Today.
-                <span className="text-emerald-400">
+                <span className="text-amber-400">
                   {" "}Lead Tomorrow.
                 </span>
               </h3>
@@ -395,7 +393,7 @@ const WhyUs = () => {
                     : { y: -4, scale: 1.02 }
                 }
                 whileTap={{ scale: 0.97 }}
-                className="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-emerald-500 px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-emerald-900/20 transition-colors duration-300 hover:bg-emerald-400"
+                className="group relative isolate inline-flex items-center justify-center gap-2 overflow-hidden rounded-xl bg-amber-500 px-6 py-4 text-sm font-extrabold text-white shadow-lg shadow-amber-900/20 transition-colors duration-300 hover:bg-amber-400"
               >
                 {!shouldReduceMotion && (
                   <motion.span
@@ -461,7 +459,7 @@ const WhyUs = () => {
             >
               <CheckCircle2
                 size={17}
-                className="text-emerald-600"
+                className="text-amber-600"
               />
               <span>{item}</span>
             </motion.div>

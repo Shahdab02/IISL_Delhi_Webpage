@@ -16,20 +16,20 @@ const Contact = () => {
   return (
     <div className="contact-page min-h-screen bg-slate-50">
       {/*HERO SECTION */}
-      <section className="contact-hero relative overflow-hidden bg-linear-to-br from-[#f7f2fb] via-white to-[#f3edf9]">
-        <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#5a2d8f]/10 blur-3xl" />
-        <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-[#d9b3ff]/20 blur-3xl" />
+      <section className="contact-hero relative overflow-hidden bg-linear-to-br from-[#eff6ff] via-white to-[#eff6ff]">
+        <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#0B3D91]/10 blur-3xl" />
+        <div className="absolute -right-24 top-20 h-80 w-80 rounded-full bg-[#4DA3FF]/20 blur-3xl" />
 
         <div className="relative mx-auto max-w-7xl px-5 py-16 sm:px-8 lg:px-3 lg:py-24">
           <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#5a2d8f]/20 bg-white px-4 py-2 text-sm font-semibold text-[#5a2d8f] shadow-sm">
+            <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-[#0B3D91]/20 bg-white px-4 py-2 text-sm font-semibold text-[#0B3D91] shadow-sm">
               <MessageCircle size={17} />
               We're Here to Help
             </div>
 
-            <h1 className="text-4xl font-extrabold leading-tight text-[#1f1230] sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-extrabold leading-tight text-[#071b38] sm:text-5xl lg:text-6xl">
               Let's Start Your{" "}
-              <span className="text-[#5a2d8f]">Learning Journey</span>
+              <span className="text-[#0B3D91]">Learning Journey</span>
             </h1>
 
             <p className="mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg">
@@ -44,7 +44,7 @@ const Contact = () => {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a
                 href="#contact-form"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#5a2d8f] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#5a2d8f]/20 transition hover:-translate-y-1 hover:bg-[#4b2378]"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#0B3D91] px-6 py-3.5 font-semibold text-white shadow-lg shadow-[#0B3D91]/20 transition hover:-translate-y-1 hover:bg-[#093678]"
               >
                 Contact Us
                 <ArrowRight size={18} />
@@ -54,7 +54,7 @@ const Contact = () => {
                 href="https://wa.me/919310772538"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center justify-center gap-2 rounded-xl border border-green-500 bg-white px-6 py-3.5 font-semibold text-green-600 transition hover:-translate-y-1 hover:bg-green-50"
+                className="inline-flex items-center justify-center gap-2 rounded-xl border border-amber-500 bg-white px-6 py-3.5 font-semibold text-amber-600 transition hover:-translate-y-1 hover:bg-amber-50"
               >
                 <MessageCircle size={19} />
                 WhatsApp Us
@@ -67,11 +67,11 @@ const Contact = () => {
       {/* CONTACT INFORMATION */}
       <section className="contact-info-section mx-auto max-w-7xl px-5 py-14 sm:px-8 lg:px-3">
         <div className="mb-10 text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0B3D91]">
             Get In Touch
           </p>
 
-          <h2 className="mt-3 text-3xl font-extrabold text-[#1f1230] sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-extrabold text-[#071b38] sm:text-4xl">
             We'd Love To Hear From You
           </h2>
 
@@ -85,9 +85,9 @@ const Contact = () => {
           {/* PHONE */}
           <a
             href="tel:+919310772538"
-            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#0B3D91]/30 hover:shadow-xl"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f] transition group-hover:bg-[#5a2d8f] group-hover:text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0B3D91]/10 text-[#0B3D91] transition group-hover:bg-[#0B3D91] group-hover:text-white">
               <Phone size={23} />
             </div>
 
@@ -103,7 +103,7 @@ const Contact = () => {
           {/* EMAIL */}
           <a
             href="mailto:iisldelhi@gmail.com"
-            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#0B3D91]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-orange-500/10 text-orange-600 transition group-hover:bg-orange-500 group-hover:text-white">
               <Mail size={23} />
@@ -121,9 +121,9 @@ const Contact = () => {
             href="https://www.google.com/maps/search/?api=1&query=647+Gram+Sabha+Rohini+Sector+23+Delhi"
             target="_blank"
             rel="noreferrer"
-            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#0B3D91]/30 hover:shadow-xl"
           >
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f] transition group-hover:bg-[#5a2d8f] group-hover:text-white">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#0B3D91]/10 text-[#0B3D91] transition group-hover:bg-[#0B3D91] group-hover:text-white">
               <MapPin size={23} />
             </div>
 
@@ -145,7 +145,7 @@ const Contact = () => {
             href="https://iisldelhi.com/"
             target="_blank"
             rel="noreferrer"
-            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#5a2d8f]/30 hover:shadow-xl"
+            className="contact-info-card group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-2 hover:border-[#0B3D91]/30 hover:shadow-xl"
           >
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-500/10 text-blue-600 transition group-hover:bg-blue-500 group-hover:text-white">
               <Globe size={23} />
@@ -165,14 +165,14 @@ const Contact = () => {
         <div className="mx-auto grid max-w-7xl gap-10 px-5 sm:px-8 lg:grid-cols-2 lg:px-3">
           {/* LEFT CONTENT */}
           <div className="flex flex-col justify-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0B3D91]">
               Contact Us
             </p>
 
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#1f1230] sm:text-4xl">
+            <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#071b38] sm:text-4xl">
               Have Questions?
               <br />
-              <span className="text-[#5a2d8f]">Let's Talk.</span>
+              <span className="text-[#0B3D91]">Let's Talk.</span>
             </h2>
 
             <p className="mt-5 max-w-lg leading-7 text-slate-600">
@@ -184,7 +184,7 @@ const Contact = () => {
             {/* Working Hours */}
             <div className="mt-8 space-y-5">
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#5a2d8f]/10 text-[#5a2d8f]">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#0B3D91]/10 text-[#0B3D91]">
                   <Clock size={21} />
                 </div>
 
@@ -201,7 +201,7 @@ const Contact = () => {
 
               {/* WhatsApp */}
               <div className="flex items-start gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-green-500/10 text-green-600">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-amber-500/10 text-amber-600">
                   <MessageCircle size={21} />
                 </div>
 
@@ -220,7 +220,7 @@ const Contact = () => {
           <div className="contact-form-card rounded-3xl border border-slate-200 bg-slate-50 p-6 shadow-xl sm:p-8">
             {state.succeeded ? (
               <div className="flex min-h-112.5 flex-col items-center justify-center text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                   <Send size={28} />
                 </div>
 
@@ -251,7 +251,7 @@ const Contact = () => {
                       name="name"
                       placeholder="Enter your name"
                       required
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
                     />
 
                     <ValidationError
@@ -276,7 +276,7 @@ const Contact = () => {
                       name="phone"
                       placeholder="Enter phone number"
                       required
-                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
                     />
 
                     <ValidationError
@@ -303,7 +303,7 @@ const Contact = () => {
                     name="email"
                     placeholder="Enter your email"
                     required
-                    className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
                   />
 
                   <ValidationError
@@ -328,7 +328,7 @@ const Contact = () => {
                     name="course"
                     required
                     defaultValue=""
-                    className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-600 outline-none transition focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-600 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
                   >
                     <option value="" disabled>
                       Select a course
@@ -369,7 +369,7 @@ const Contact = () => {
                     rows="5"
                     placeholder="Write your message..."
                     required
-                    className="w-full resize-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#5a2d8f] focus:ring-4 focus:ring-[#5a2d8f]/10"
+                    className="w-full resize-none rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
                   />
 
                   <ValidationError
@@ -390,7 +390,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#5a2d8f] px-6 py-4 font-bold text-white shadow-lg shadow-[#5a2d8f]/20 transition hover:-translate-y-1 hover:bg-[#4b2378] disabled:cursor-not-allowed disabled:opacity-60"
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[#0B3D91] px-6 py-4 font-bold text-white shadow-lg shadow-[#0B3D91]/20 transition hover:-translate-y-1 hover:bg-[#093678] disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {state.submitting ? "Sending..." : "Send Message"}
 
@@ -406,11 +406,11 @@ const Contact = () => {
       <section className="contact-map-section bg-slate-50 py-16">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-3">
           <div className="mb-8 text-center">
-            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#5a2d8f]">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-[#0B3D91]">
               Find Us
             </p>
 
-            <h2 className="mt-2 text-3xl font-extrabold text-[#1f1230] sm:text-4xl">
+            <h2 className="mt-2 text-3xl font-extrabold text-[#071b38] sm:text-4xl">
               Visit IISL
             </h2>
 
@@ -432,7 +432,7 @@ const Contact = () => {
 
       {/* FINAL CTA */}
       <section className="px-5 py-16 sm:px-8">
-        <div className="relative mx-auto max-w-7xl overflow-hidden rounded-3xl bg-linear-to-r from-[#382166] to-[#5b3aa0] px-6 py-12 text-center shadow-2xl sm:px-10">
+        <div className="brand-gradient relative mx-auto max-w-7xl overflow-hidden rounded-3xl px-6 py-12 text-center shadow-2xl sm:px-10">
           <div className="absolute -left-20 -top-20 h-48 w-48 rounded-full bg-white/10" />
           <div className="absolute -bottom-20 -right-20 h-56 w-56 rounded-full bg-orange-400/20" />
 
@@ -449,7 +449,7 @@ const Contact = () => {
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
               <a
                 href="tel:+919310772538"
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-[#5a2d8f] transition hover:-translate-y-1 hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-white px-7 py-3.5 font-bold text-[#0B3D91] transition hover:-translate-y-1 hover:shadow-xl"
               >
                 <Phone size={18} />
                 Call Now
