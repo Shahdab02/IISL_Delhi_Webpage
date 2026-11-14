@@ -13,7 +13,8 @@ import {
 } from "lucide-react";
 
 import sir from "../../assets/optimized/summit_sir.jpg";
-import shahdab from "../../assets/optimized/shahdab.jpg";
+// import shahdab from "../../assets/optimized/shahdab.jpg";
+import shahdab from "../../assets/monu.jpeg"
 import simmi from "../../assets/optimized/simmi.jpg";
 import divya from "../../assets/optimized/divya.jpg";
 import lakshay from "../../assets/optimized/lakshay.jpg";

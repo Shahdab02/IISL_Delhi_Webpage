@@ -446,7 +446,7 @@ const TechService = () => {
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-sm font-semibold text-[#ead9ff]">
               <Sparkles size={16} aria-hidden="true" />
-              Digital services, designed for growth
+              IISL Digital Agency · Services for business growth
             </div>
             <h1 className="mt-6 max-w-3xl text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-6xl">
               Make your next
@@ -454,9 +454,10 @@ const TechService = () => {
               count.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
-              From websites and store management to Google Ads, Meta Ads, and
-              social media, IISL helps your business build a stronger digital
-              presence and reach more customers.
+              Our digital agency helps businesses build and grow online—from
+              professional websites and store management to Google Ads, Meta
+              Ads, SEO, and social media. IISL also trains the next generation
+              of digital talent.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a

@@ -7,9 +7,9 @@ const Topbar = () => {
       <p className="text-[15px] font-semibold tracking-[0.04em] text-white md:text-[17px]">
         IISL
         <span className="mx-2 font-normal text-white/40">|</span>
-        Learn
+        Training Institute
         <span className="mx-2 font-normal text-white/40">|</span>
-        Grow
+        Digital Agency
         <span className="mx-2 font-normal text-white/40">|</span>
         Build Your Future
       </p>

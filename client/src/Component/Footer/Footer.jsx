@@ -31,13 +31,15 @@ const Footer = () => {
                   IISL
                 </h3>
                 <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#4DA3FF]">
-                  Indian Institute of Skills & Languages
+                  Training Institute + Digital Agency
                 </p>
               </div>
             </div>
 
             <p className="mt-6 max-w-xl text-sm leading-7 text-white/70">
-              Empowering students with industry-focused learning, practical mentorship, and career-driven education for a brighter future.
+              IISL brings together practical, career-focused training for
+              learners and digital services that help businesses build and grow
+              their online presence.
             </p>
 
             <div className="mt-10 grid gap-8 border-t border-white/10 pt-8 sm:grid-cols-2">
@@ -50,6 +52,7 @@ const Footer = () => {
                   <li><Link to="/about" className="transition-colors hover:text-[#4DA3FF]">About</Link></li>
                   <li><Link to="/why-us" className="transition-colors hover:text-[#4DA3FF]">Why Us</Link></li>
                   <li><Link to="/courses" className="transition-colors hover:text-[#4DA3FF]">Courses</Link></li>
+                  <li><Link to="/tech-service" className="transition-colors hover:text-[#4DA3FF]">Agency Services</Link></li>
                   <li><Link to="/contact" className="transition-colors hover:text-[#4DA3FF]">Contact</Link></li>
                   <li><a href="https://blog.iisldelhi.com/all-blogs/" target="_blank" rel="noreferrer" className="transition-colors hover:text-[#4DA3FF]">IISL Blog</a></li>
                 </ul>
@@ -107,9 +110,9 @@ const Footer = () => {
               <div className="flex items-start gap-3">
                 <Clock3 size={19} className="mt-0.5 shrink-0 text-[#4DA3FF]" />
                 <p className="text-sm leading-6 text-white/70">
-                  Mon - Sat
+                  Monday – Saturday
                   <br />
-                  9:00 AM - 8:00 PM
+                  10:00 AM – 7:00 PM
                 </p>
               </div>
             </div>

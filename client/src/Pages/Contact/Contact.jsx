@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import {
   Phone,
@@ -12,6 +13,7 @@ import {
 
 const Contact = () => {
   const [state, handleSubmit] = useForm("mdeakaag");
+  const [isAgencyInquiry, setIsAgencyInquiry] = useState(false);
 
   return (
     <div className="contact-page min-h-screen bg-slate-50">
@@ -176,10 +178,61 @@ const Contact = () => {
             </h2>
 
             <p className="mt-5 max-w-lg leading-7 text-slate-600">
-              Fill out the form and our team will get back to you. We can help
-              you choose the right course, understand admission details, and
-              guide you toward your career goals.
+              {isAgencyInquiry
+                ? "Tell us about your business and the digital services you need. Our agency team will get back to you to discuss the right solution."
+                : "Fill out the form and our team will get back to you. We can help you choose the right course, understand admission details, and guide you toward your career goals."}
             </p>
+
+            <div className="brand-gradient relative mt-8 overflow-hidden rounded-3xl p-6 text-white shadow-xl shadow-[#0B3D91]/20 sm:p-7">
+              <div className="absolute -right-10 -top-12 h-36 w-36 rounded-full border border-white/15" />
+              <div className="absolute -right-4 -top-6 h-24 w-24 rounded-full border border-white/10" />
+
+              <div className="relative">
+                <span className="inline-flex rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white/90">
+                  {isAgencyInquiry ? "For businesses" : "For learners"}
+                </span>
+
+                <h3 className="mt-4 text-xl font-extrabold sm:text-2xl">
+                  {isAgencyInquiry
+                    ? "Make your next online move."
+                    : "Take the next step in your journey."}
+                </h3>
+
+                <p className="mt-2 max-w-md text-sm leading-6 text-white/80">
+                  {isAgencyInquiry
+                    ? "Get practical digital support tailored to your business goals."
+                    : "Get friendly guidance on courses, admissions, and building job-ready skills."}
+                </p>
+
+                <div className="mt-5 grid grid-cols-2 gap-2 text-sm font-medium">
+                  {(isAgencyInquiry
+                    ? ["Websites & SEO", "Ads & social media"]
+                    : ["Course guidance", "Admission support"]
+                  ).map((item) => (
+                    <div
+                      key={item}
+                      className="rounded-xl border border-white/15 bg-white/10 px-3 py-2.5 text-white/95"
+                    >
+                      {item}
+                    </div>
+                  ))}
+                </div>
+
+                <a
+                  href={`https://wa.me/919310772538?text=${encodeURIComponent(
+                    isAgencyInquiry
+                      ? "Hello IISL, I would like to discuss your digital agency services."
+                      : "Hello IISL, I would like to ask about courses and admissions.",
+                  )}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex items-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-[#0B3D91] transition hover:-translate-y-0.5 hover:bg-blue-50"
+                >
+                  {isAgencyInquiry ? "Chat with our agency team" : "Chat with admissions"}
+                  <ArrowRight size={17} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
 
             {/* Working Hours */}
             <div className="mt-8 space-y-5">
@@ -195,7 +248,7 @@ const Contact = () => {
                     Monday – Saturday
                   </p>
 
-                  <p className="text-sm text-slate-500">9:00 AM – 7:00 PM</p>
+                  <p className="text-sm text-slate-500">10:00 AM – 7:00 PM</p>
                 </div>
               </div>
 
@@ -235,6 +288,47 @@ const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
+                <div>
+                  <p className="mb-2 text-sm font-semibold text-slate-700">
+                    What would you like to contact us about?
+                  </p>
+                  <div
+                    className="grid grid-cols-2 gap-2 rounded-xl border border-slate-200 bg-white p-1.5"
+                    role="group"
+                    aria-label="Choose an inquiry type"
+                  >
+                    <button
+                      type="button"
+                      aria-pressed={!isAgencyInquiry}
+                      onClick={() => setIsAgencyInquiry(false)}
+                      className={`rounded-lg px-3 py-2.5 text-sm font-semibold transition ${
+                        !isAgencyInquiry
+                          ? "bg-[#0B3D91] text-white shadow-sm"
+                          : "text-slate-600 hover:bg-slate-100"
+                      }`}
+                    >
+                      Institute
+                    </button>
+                    <button
+                      type="button"
+                      aria-pressed={isAgencyInquiry}
+                      onClick={() => setIsAgencyInquiry(true)}
+                      className={`rounded-lg px-3 py-2.5 text-sm font-semibold transition ${
+                        isAgencyInquiry
+                          ? "bg-[#0B3D91] text-white shadow-sm"
+                          : "text-slate-600 hover:bg-slate-100"
+                      }`}
+                    >
+                      Digital Agency
+                    </button>
+                  </div>
+                </div>
+                <input
+                  type="hidden"
+                  name="inquiry_type"
+                  value={isAgencyInquiry ? "Digital Agency" : "Institute"}
+                />
+
                 {/* Name + Phone */}
                 <div className="grid gap-5 sm:grid-cols-2">
                   <div>
@@ -314,45 +408,107 @@ const Contact = () => {
                   />
                 </div>
 
-                {/* Course */}
-                <div>
-                  <label
-                    htmlFor="course"
-                    className="mb-2 block text-sm font-semibold text-slate-700"
-                  >
-                    Interested Course
-                  </label>
-
-                  <select
-                    id="course"
-                    name="course"
-                    required
-                    defaultValue=""
-                    className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-600 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
-                  >
-                    <option value="" disabled>
-                      Select a course
-                    </option>
-                    <option value="Basic Computer & MS Office">
-                      Basic Computer & MS Office
-                    </option>
-                    <option value="Web Development">Web Development</option>
-                    <option value="Full Stack Development">
-                      Full Stack Development
-                    </option>
-                    <option value="Digital Marketing">Digital Marketing</option>
-                    <option value="English Spoken">English Spoken</option>
-                    <option value="German Language">German Language</option>
-                    <option value="French Language">French Language</option>
-                  </select>
-
-                  <ValidationError
-                    prefix="Course"
-                    field="course"
-                    errors={state.errors}
-                    className="mt-1 text-sm text-red-500"
-                  />
-                </div>
+                {isAgencyInquiry ? (
+                  <>
+                    <div>
+                      <label
+                        htmlFor="business-name"
+                        className="mb-2 block text-sm font-semibold text-slate-700"
+                      >
+                        Business / Organization Name
+                      </label>
+                      <input
+                        id="business-name"
+                        type="text"
+                        name="business_name"
+                        placeholder="Enter your business or organization name"
+                        required
+                        className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
+                      />
+                      <ValidationError
+                        prefix="Business name"
+                        field="business_name"
+                        errors={state.errors}
+                        className="mt-1 text-sm text-red-500"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="service"
+                        className="mb-2 block text-sm font-semibold text-slate-700"
+                      >
+                        Digital Service Needed
+                      </label>
+                      <select
+                        id="service"
+                        name="service"
+                        required
+                        defaultValue=""
+                        className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-600 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
+                      >
+                        <option value="" disabled>
+                          Select a service
+                        </option>
+                        <option value="Website Design & Development">
+                          Website Design & Development
+                        </option>
+                        <option value="SEO">SEO</option>
+                        <option value="Google Ads">Google Ads</option>
+                        <option value="Meta Ads">Meta Ads</option>
+                        <option value="Social Media Management">
+                          Social Media Management
+                        </option>
+                        <option value="E-commerce / Store Management">
+                          E-commerce / Store Management
+                        </option>
+                        <option value="Other">Other</option>
+                      </select>
+                      <ValidationError
+                        prefix="Service"
+                        field="service"
+                        errors={state.errors}
+                        className="mt-1 text-sm text-red-500"
+                      />
+                    </div>
+                  </>
+                ) : (
+                  <div>
+                    <label
+                      htmlFor="course"
+                      className="mb-2 block text-sm font-semibold text-slate-700"
+                    >
+                      Interested Course
+                    </label>
+                    <select
+                      id="course"
+                      name="course"
+                      required
+                      defaultValue=""
+                      className="w-full rounded-xl border border-slate-200 bg-white px-4 py-3.5 text-slate-600 outline-none transition focus:border-[#0B3D91] focus:ring-4 focus:ring-[#0B3D91]/10"
+                    >
+                      <option value="" disabled>
+                        Select a course
+                      </option>
+                      <option value="Basic Computer & MS Office">
+                        Basic Computer & MS Office
+                      </option>
+                      <option value="Web Development">Web Development</option>
+                      <option value="Full Stack Development">
+                        Full Stack Development
+                      </option>
+                      <option value="Digital Marketing">Digital Marketing</option>
+                      <option value="English Spoken">English Spoken</option>
+                      <option value="German Language">German Language</option>
+                      <option value="French Language">French Language</option>
+                    </select>
+                    <ValidationError
+                      prefix="Course"
+                      field="course"
+                      errors={state.errors}
+                      className="mt-1 text-sm text-red-500"
+                    />
+                  </div>
+                )}
 
                 {/* Message */}
                 <div>

@@ -16,8 +16,8 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
       path: "/",
     },
     {
-      name: "Tech Service",
-      path: "/tech-service",
+      name: "Agency Services",
+      path: "/Agency-service",
     },
     {
       name: "About",
@@ -86,7 +86,7 @@ const Navbar = ({ isDarkMode, onToggleTheme }) => {
                 IISL
               </div>
               <div className="navbar-brand-caption text-[10px] uppercase tracking-[0.22em] text-[#356ba8] font-semibold">
-                Indian Institute of Skills &amp; Languages
+                Training Institute + Digital Agency
               </div>
             </div>
           </Link>

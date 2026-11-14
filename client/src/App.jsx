@@ -17,14 +17,14 @@ const TechService = lazy(() => import("./Pages/TechService/TechService"));
 
 const pageMetadata = {
   "/": {
-    title: "IISL Delhi | Skills & Language Courses in Rohini",
+    title: "IISL Delhi | Training Institute & Digital Agency",
     description:
-      "Learn practical computer, digital marketing, web development, and language skills at IISL in Rohini, Delhi. Explore courses and enquire about admissions.",
+      "IISL Delhi is a practical skills and language training institute and digital agency in Rohini, offering career-focused courses and website, SEO, advertising, and social media services.",
   },
   "/about": {
-    title: "About IISL Delhi | Practical Skills & Language Learning",
+    title: "About IISL Delhi | Institute & Digital Agency",
     description:
-      "Learn about Indian Institute of Skills & Languages, a practical skills and language learning institute in Rohini, Delhi.",
+      "Learn about IISL Delhi: a practical skills and language training institute for learners and a digital agency helping businesses grow online.",
   },
   "/why-us": {
     title: "Why Choose IISL Delhi | Practical, Career-Focused Learning",
@@ -44,7 +44,7 @@ const pageMetadata = {
   "/contact": {
     title: "Contact IISL Delhi | Rohini Sector 23",
     description:
-      "Contact IISL about courses and admissions, or find the institute at Rohini Sector 23, Delhi.",
+      "Contact IISL about courses, admissions, or digital agency services. Find our training institute at Rohini Sector 23, Delhi.",
   },
   "/media": {
     title: "IISL Delhi Media Gallery | Campus Photos & Videos",
@@ -157,7 +157,7 @@ function AppContent() {
         <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/tech-service" element={<TechService />} />
+            <Route path="/Agency-service" element={<TechService />} />
             <Route path="/about" element={<About />} />
             <Route path="/why-us" element={<WhyUs />} />
             <Route path="/courses" element={<Course />} />

@@ -1,4 +1,4 @@
-import { ArrowUpRight, Award } from 'lucide-react'
+import { ArrowUpRight, Award, BriefcaseBusiness, GraduationCap } from 'lucide-react'
 import marketingCertificate from '../../assets/optimized/marketing_certificate.webp'
 import Slider from './Slider'
 import WhyUs from './WhyUs'
@@ -11,6 +11,64 @@ const Home = () => {
   return (
     <div>
       <Slider />
+      <section className="bg-white px-5 py-14 text-slate-900 sm:px-8 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-[#0B3D91]">
+              One IISL. Two ways to grow.
+            </p>
+            <h1 className="mt-3 text-3xl font-black leading-tight sm:text-4xl lg:text-5xl">
+              A training institute for people.
+              <span className="block text-[#0B3D91]">
+                A digital agency for businesses.
+              </span>
+            </h1>
+            <p className="mx-auto mt-5 max-w-2xl leading-7 text-slate-600">
+              IISL helps learners build practical skills and helps businesses
+              grow online with websites, SEO, digital advertising and social
+              media services.
+            </p>
+          </div>
+
+          <div className="mt-9 grid gap-5 md:grid-cols-2">
+            <article className="rounded-3xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-800">
+                <GraduationCap size={25} aria-hidden="true" />
+              </div>
+              <h2 className="mt-5 text-2xl font-bold">Training Institute</h2>
+              <p className="mt-3 leading-7 text-slate-600">
+                Practical computer, technology, digital marketing and language
+                courses with trainer guidance in Rohini, Delhi.
+              </p>
+              <a
+                href="/courses"
+                className="mt-5 inline-flex items-center gap-2 font-bold text-[#0B3D91] hover:underline"
+              >
+                Explore courses
+                <ArrowUpRight size={17} aria-hidden="true" />
+              </a>
+            </article>
+
+            <article className="rounded-3xl border border-[#0B3D91]/20 bg-[#071b38] p-6 text-white sm:p-8">
+              <div className="flex size-12 items-center justify-center rounded-2xl bg-[#4DA3FF]/15 text-[#4DA3FF]">
+                <BriefcaseBusiness size={24} aria-hidden="true" />
+              </div>
+              <h2 className="mt-5 text-2xl font-bold">Digital Agency</h2>
+              <p className="mt-3 leading-7 text-white/70">
+                Business websites, SEO, Google and Meta Ads, e-commerce and
+                social media support—all tailored to your goals.
+              </p>
+              <a
+                href="/Agency-service"
+                className="mt-5 inline-flex items-center gap-2 font-bold text-[#8fc8ff] hover:underline"
+              >
+                Explore agency services
+                <ArrowUpRight size={17} aria-hidden="true" />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
       <About />
       <section className="relative isolate overflow-hidden bg-slate-950 px-5 py-16 text-white sm:px-8 lg:py-24">
         <div className="pointer-events-none absolute -right-32 -top-32 -z-10 h-96 w-96 rounded-full bg-blue-600/25 blur-3xl" />
@@ -74,7 +132,7 @@ const Home = () => {
       <Placement />
       <Team />
     </div>
-  )
+  );
 }
 
 export default Home

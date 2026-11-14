@@ -942,6 +942,33 @@ const About = () => {
               confidence.
             </p>
 
+            <div className="mt-6 rounded-2xl border border-blue-100 bg-blue-50 p-5">
+              <div className="flex items-start gap-3">
+                <BriefcaseBusiness
+                  size={21}
+                  className="mt-0.5 shrink-0 text-blue-700"
+                  aria-hidden="true"
+                />
+                <div>
+                  <h3 className="font-bold text-slate-900">
+                    More than a training institute
+                  </h3>
+                  <p className="mt-1 text-sm leading-6 text-slate-600">
+                    IISL also works as a digital agency, helping businesses
+                    with website development, SEO, advertising, e-commerce and
+                    social media.
+                  </p>
+                  <a
+                    href="/tech-service"
+                    className="mt-3 inline-flex items-center gap-1.5 text-sm font-bold text-blue-700 hover:underline"
+                  >
+                    Explore agency services
+                    <ArrowUpRight size={16} aria-hidden="true" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
             <div className="mt-8 flex items-start gap-4 rounded-2xl border border-blue-100 bg-blue-50 p-5">
               <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue-600">
                 <GraduationCap className="text-white" size={26} />

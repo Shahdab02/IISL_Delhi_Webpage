@@ -1,6 +1,6 @@
 # Indian Institute of Skills & Languages (IISL Delhi)
 
-> IISL is a skills and language learning institute in Rohini, Delhi.
+> IISL is a skills and language training institute for learners and a digital agency for businesses in Rohini, Delhi.
 
 ## Website
 
@@ -11,10 +11,11 @@
 - Why IISL: https://www.iisldelhi.com/why-us
 - Media gallery: https://www.iisldelhi.com/media
 - Contact and location: https://www.iisldelhi.com/contact
-- Digital services: https://www.iisldelhi.com/tech-service
+- Digital agency services: https://www.iisldelhi.com/tech-service
 
 ## Key information
 
 - Address: 647 Gram Sabha, Rohini Sector 23, Delhi
 - Subjects include computer education, digital marketing, web development, and language learning.
+- Business services include website development, SEO, Google and Meta Ads, e-commerce management, and social media management.
 - For current course and admission information, use the website pages linked above.
